@@ -1,0 +1,772 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BF8DCD7F1C437DF5009570C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8DCD7E1C437DF5009570C7 /* AppDelegate.swift */; };
+		BF8DCD811C437DF5009570C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8DCD801C437DF5009570C7 /* ViewController.swift */; };
+		BF8DCD841C437DF5009570C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF8DCD821C437DF5009570C7 /* Main.storyboard */; };
+		BF8DCD861C437DF5009570C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF8DCD851C437DF5009570C7 /* Assets.xcassets */; };
+		BF8DCD891C437DF5009570C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF8DCD871C437DF5009570C7 /* LaunchScreen.storyboard */; };
+		BF8DCD941C437DF5009570C7 /* DrilldownTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8DCD931C437DF5009570C7 /* DrilldownTests.swift */; };
+		BF8DCD9F1C437DF5009570C7 /* DrilldownUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8DCD9E1C437DF5009570C7 /* DrilldownUITests.swift */; };
+		BF8DCDA41C437DF6009570C7 /* Drilldown WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = BF8DCDA31C437DF6009570C7 /* Drilldown WatchKit App.app */; };
+		BF8DCDAA1C437DF6009570C7 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF8DCDA81C437DF6009570C7 /* Interface.storyboard */; };
+		BF8DCDAC1C437DF6009570C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF8DCDAB1C437DF6009570C7 /* Assets.xcassets */; };
+		BF8DCDB31C437DF6009570C7 /* Drilldown WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BF8DCDB21C437DF6009570C7 /* Drilldown WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BF8DCDBA1C437DF6009570C7 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8DCDB91C437DF6009570C7 /* InterfaceController.swift */; };
+		BF8DCDBC1C437DF6009570C7 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8DCDBB1C437DF6009570C7 /* ExtensionDelegate.swift */; };
+		BF8DCDBE1C437DF6009570C7 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8DCDBD1C437DF6009570C7 /* NotificationController.swift */; };
+		BF8DCDC01C437DF6009570C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF8DCDBF1C437DF6009570C7 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BF8DCD901C437DF5009570C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF8DCD731C437DF5009570C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF8DCD7A1C437DF5009570C7;
+			remoteInfo = Drilldown;
+		};
+		BF8DCD9B1C437DF5009570C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF8DCD731C437DF5009570C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF8DCD7A1C437DF5009570C7;
+			remoteInfo = Drilldown;
+		};
+		BF8DCDA51C437DF6009570C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF8DCD731C437DF5009570C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF8DCDA21C437DF6009570C7;
+			remoteInfo = "Drilldown WatchKit App";
+		};
+		BF8DCDB41C437DF6009570C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF8DCD731C437DF5009570C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF8DCDB11C437DF6009570C7;
+			remoteInfo = "Drilldown WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BF8DCDC71C437DF6009570C7 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BF8DCDB31C437DF6009570C7 /* Drilldown WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF8DCDCB1C437DF6009570C7 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				BF8DCDA41C437DF6009570C7 /* Drilldown WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		BF8DCD7B1C437DF5009570C7 /* Drilldown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Drilldown.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF8DCD7E1C437DF5009570C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BF8DCD801C437DF5009570C7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BF8DCD831C437DF5009570C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BF8DCD851C437DF5009570C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BF8DCD881C437DF5009570C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BF8DCD8A1C437DF5009570C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF8DCD8F1C437DF5009570C7 /* DrilldownTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrilldownTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF8DCD931C437DF5009570C7 /* DrilldownTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrilldownTests.swift; sourceTree = "<group>"; };
+		BF8DCD951C437DF5009570C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF8DCD9A1C437DF5009570C7 /* DrilldownUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrilldownUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF8DCD9E1C437DF5009570C7 /* DrilldownUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrilldownUITests.swift; sourceTree = "<group>"; };
+		BF8DCDA01C437DF5009570C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF8DCDA31C437DF6009570C7 /* Drilldown WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Drilldown WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF8DCDA91C437DF6009570C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		BF8DCDAB1C437DF6009570C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BF8DCDAD1C437DF6009570C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF8DCDB21C437DF6009570C7 /* Drilldown WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Drilldown WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF8DCDB81C437DF6009570C7 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		BF8DCDB91C437DF6009570C7 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		BF8DCDBB1C437DF6009570C7 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		BF8DCDBD1C437DF6009570C7 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		BF8DCDBF1C437DF6009570C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BF8DCDC11C437DF6009570C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BF8DCD781C437DF5009570C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF8DCD8C1C437DF5009570C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF8DCD971C437DF5009570C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF8DCDAF1C437DF6009570C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BF8DCD721C437DF5009570C7 = {
+			isa = PBXGroup;
+			children = (
+				BF8DCD7D1C437DF5009570C7 /* Drilldown */,
+				BF8DCD921C437DF5009570C7 /* DrilldownTests */,
+				BF8DCD9D1C437DF5009570C7 /* DrilldownUITests */,
+				BF8DCDA71C437DF6009570C7 /* Drilldown WatchKit App */,
+				BF8DCDB61C437DF6009570C7 /* Drilldown WatchKit Extension */,
+				BF8DCD7C1C437DF5009570C7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BF8DCD7C1C437DF5009570C7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF8DCD7B1C437DF5009570C7 /* Drilldown.app */,
+				BF8DCD8F1C437DF5009570C7 /* DrilldownTests.xctest */,
+				BF8DCD9A1C437DF5009570C7 /* DrilldownUITests.xctest */,
+				BF8DCDA31C437DF6009570C7 /* Drilldown WatchKit App.app */,
+				BF8DCDB21C437DF6009570C7 /* Drilldown WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BF8DCD7D1C437DF5009570C7 /* Drilldown */ = {
+			isa = PBXGroup;
+			children = (
+				BF8DCD7E1C437DF5009570C7 /* AppDelegate.swift */,
+				BF8DCD801C437DF5009570C7 /* ViewController.swift */,
+				BF8DCD821C437DF5009570C7 /* Main.storyboard */,
+				BF8DCD851C437DF5009570C7 /* Assets.xcassets */,
+				BF8DCD871C437DF5009570C7 /* LaunchScreen.storyboard */,
+				BF8DCD8A1C437DF5009570C7 /* Info.plist */,
+			);
+			path = Drilldown;
+			sourceTree = "<group>";
+		};
+		BF8DCD921C437DF5009570C7 /* DrilldownTests */ = {
+			isa = PBXGroup;
+			children = (
+				BF8DCD931C437DF5009570C7 /* DrilldownTests.swift */,
+				BF8DCD951C437DF5009570C7 /* Info.plist */,
+			);
+			path = DrilldownTests;
+			sourceTree = "<group>";
+		};
+		BF8DCD9D1C437DF5009570C7 /* DrilldownUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BF8DCD9E1C437DF5009570C7 /* DrilldownUITests.swift */,
+				BF8DCDA01C437DF5009570C7 /* Info.plist */,
+			);
+			path = DrilldownUITests;
+			sourceTree = "<group>";
+		};
+		BF8DCDA71C437DF6009570C7 /* Drilldown WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				BF8DCDA81C437DF6009570C7 /* Interface.storyboard */,
+				BF8DCDAB1C437DF6009570C7 /* Assets.xcassets */,
+				BF8DCDAD1C437DF6009570C7 /* Info.plist */,
+			);
+			path = "Drilldown WatchKit App";
+			sourceTree = "<group>";
+		};
+		BF8DCDB61C437DF6009570C7 /* Drilldown WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				BF8DCDB91C437DF6009570C7 /* InterfaceController.swift */,
+				BF8DCDBB1C437DF6009570C7 /* ExtensionDelegate.swift */,
+				BF8DCDBD1C437DF6009570C7 /* NotificationController.swift */,
+				BF8DCDBF1C437DF6009570C7 /* Assets.xcassets */,
+				BF8DCDC11C437DF6009570C7 /* Info.plist */,
+				BF8DCDB71C437DF6009570C7 /* Supporting Files */,
+			);
+			path = "Drilldown WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		BF8DCDB71C437DF6009570C7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BF8DCDB81C437DF6009570C7 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BF8DCD7A1C437DF5009570C7 /* Drilldown */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF8DCDCC1C437DF6009570C7 /* Build configuration list for PBXNativeTarget "Drilldown" */;
+			buildPhases = (
+				BF8DCD771C437DF5009570C7 /* Sources */,
+				BF8DCD781C437DF5009570C7 /* Frameworks */,
+				BF8DCD791C437DF5009570C7 /* Resources */,
+				BF8DCDCB1C437DF6009570C7 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF8DCDA61C437DF6009570C7 /* PBXTargetDependency */,
+			);
+			name = Drilldown;
+			productName = Drilldown;
+			productReference = BF8DCD7B1C437DF5009570C7 /* Drilldown.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BF8DCD8E1C437DF5009570C7 /* DrilldownTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF8DCDCF1C437DF6009570C7 /* Build configuration list for PBXNativeTarget "DrilldownTests" */;
+			buildPhases = (
+				BF8DCD8B1C437DF5009570C7 /* Sources */,
+				BF8DCD8C1C437DF5009570C7 /* Frameworks */,
+				BF8DCD8D1C437DF5009570C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF8DCD911C437DF5009570C7 /* PBXTargetDependency */,
+			);
+			name = DrilldownTests;
+			productName = DrilldownTests;
+			productReference = BF8DCD8F1C437DF5009570C7 /* DrilldownTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BF8DCD991C437DF5009570C7 /* DrilldownUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF8DCDD21C437DF6009570C7 /* Build configuration list for PBXNativeTarget "DrilldownUITests" */;
+			buildPhases = (
+				BF8DCD961C437DF5009570C7 /* Sources */,
+				BF8DCD971C437DF5009570C7 /* Frameworks */,
+				BF8DCD981C437DF5009570C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF8DCD9C1C437DF5009570C7 /* PBXTargetDependency */,
+			);
+			name = DrilldownUITests;
+			productName = DrilldownUITests;
+			productReference = BF8DCD9A1C437DF5009570C7 /* DrilldownUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		BF8DCDA21C437DF6009570C7 /* Drilldown WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF8DCDC81C437DF6009570C7 /* Build configuration list for PBXNativeTarget "Drilldown WatchKit App" */;
+			buildPhases = (
+				BF8DCDA11C437DF6009570C7 /* Resources */,
+				BF8DCDC71C437DF6009570C7 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF8DCDB51C437DF6009570C7 /* PBXTargetDependency */,
+			);
+			name = "Drilldown WatchKit App";
+			productName = "Drilldown WatchKit App";
+			productReference = BF8DCDA31C437DF6009570C7 /* Drilldown WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		BF8DCDB11C437DF6009570C7 /* Drilldown WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF8DCDC41C437DF6009570C7 /* Build configuration list for PBXNativeTarget "Drilldown WatchKit Extension" */;
+			buildPhases = (
+				BF8DCDAE1C437DF6009570C7 /* Sources */,
+				BF8DCDAF1C437DF6009570C7 /* Frameworks */,
+				BF8DCDB01C437DF6009570C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Drilldown WatchKit Extension";
+			productName = "Drilldown WatchKit Extension";
+			productReference = BF8DCDB21C437DF6009570C7 /* Drilldown WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BF8DCD731C437DF5009570C7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Pavel Hamřík";
+				TargetAttributes = {
+					BF8DCD7A1C437DF5009570C7 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					BF8DCD8E1C437DF5009570C7 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = BF8DCD7A1C437DF5009570C7;
+					};
+					BF8DCD991C437DF5009570C7 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = BF8DCD7A1C437DF5009570C7;
+					};
+					BF8DCDA21C437DF6009570C7 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					BF8DCDB11C437DF6009570C7 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = BF8DCD761C437DF5009570C7 /* Build configuration list for PBXProject "Drilldown" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BF8DCD721C437DF5009570C7;
+			productRefGroup = BF8DCD7C1C437DF5009570C7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BF8DCD7A1C437DF5009570C7 /* Drilldown */,
+				BF8DCD8E1C437DF5009570C7 /* DrilldownTests */,
+				BF8DCD991C437DF5009570C7 /* DrilldownUITests */,
+				BF8DCDA21C437DF6009570C7 /* Drilldown WatchKit App */,
+				BF8DCDB11C437DF6009570C7 /* Drilldown WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BF8DCD791C437DF5009570C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF8DCD891C437DF5009570C7 /* LaunchScreen.storyboard in Resources */,
+				BF8DCD861C437DF5009570C7 /* Assets.xcassets in Resources */,
+				BF8DCD841C437DF5009570C7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF8DCD8D1C437DF5009570C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF8DCD981C437DF5009570C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF8DCDA11C437DF6009570C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF8DCDAC1C437DF6009570C7 /* Assets.xcassets in Resources */,
+				BF8DCDAA1C437DF6009570C7 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF8DCDB01C437DF6009570C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF8DCDC01C437DF6009570C7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BF8DCD771C437DF5009570C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF8DCD811C437DF5009570C7 /* ViewController.swift in Sources */,
+				BF8DCD7F1C437DF5009570C7 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF8DCD8B1C437DF5009570C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF8DCD941C437DF5009570C7 /* DrilldownTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF8DCD961C437DF5009570C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF8DCD9F1C437DF5009570C7 /* DrilldownUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF8DCDAE1C437DF6009570C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF8DCDBE1C437DF6009570C7 /* NotificationController.swift in Sources */,
+				BF8DCDBC1C437DF6009570C7 /* ExtensionDelegate.swift in Sources */,
+				BF8DCDBA1C437DF6009570C7 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BF8DCD911C437DF5009570C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF8DCD7A1C437DF5009570C7 /* Drilldown */;
+			targetProxy = BF8DCD901C437DF5009570C7 /* PBXContainerItemProxy */;
+		};
+		BF8DCD9C1C437DF5009570C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF8DCD7A1C437DF5009570C7 /* Drilldown */;
+			targetProxy = BF8DCD9B1C437DF5009570C7 /* PBXContainerItemProxy */;
+		};
+		BF8DCDA61C437DF6009570C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF8DCDA21C437DF6009570C7 /* Drilldown WatchKit App */;
+			targetProxy = BF8DCDA51C437DF6009570C7 /* PBXContainerItemProxy */;
+		};
+		BF8DCDB51C437DF6009570C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF8DCDB11C437DF6009570C7 /* Drilldown WatchKit Extension */;
+			targetProxy = BF8DCDB41C437DF6009570C7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BF8DCD821C437DF5009570C7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF8DCD831C437DF5009570C7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BF8DCD871C437DF5009570C7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF8DCD881C437DF5009570C7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		BF8DCDA81C437DF6009570C7 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF8DCDA91C437DF6009570C7 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BF8DCDC21C437DF6009570C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BF8DCDC31C437DF6009570C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BF8DCDC51C437DF6009570C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Drilldown WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ph.Drilldown.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		BF8DCDC61C437DF6009570C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Drilldown WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ph.Drilldown.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		BF8DCDC91C437DF6009570C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = Drilldown_WatchKit_Extension;
+				INFOPLIST_FILE = "Drilldown WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = ph.Drilldown.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		BF8DCDCA1C437DF6009570C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = Drilldown_WatchKit_Extension;
+				INFOPLIST_FILE = "Drilldown WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = ph.Drilldown.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		BF8DCDCD1C437DF6009570C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Drilldown/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ph.Drilldown;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BF8DCDCE1C437DF6009570C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Drilldown/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ph.Drilldown;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BF8DCDD01C437DF6009570C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DrilldownTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ph.DrilldownTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Drilldown.app/Drilldown";
+			};
+			name = Debug;
+		};
+		BF8DCDD11C437DF6009570C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DrilldownTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ph.DrilldownTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Drilldown.app/Drilldown";
+			};
+			name = Release;
+		};
+		BF8DCDD31C437DF6009570C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DrilldownUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ph.DrilldownUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Drilldown;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		BF8DCDD41C437DF6009570C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DrilldownUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ph.DrilldownUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Drilldown;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BF8DCD761C437DF5009570C7 /* Build configuration list for PBXProject "Drilldown" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF8DCDC21C437DF6009570C7 /* Debug */,
+				BF8DCDC31C437DF6009570C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF8DCDC41C437DF6009570C7 /* Build configuration list for PBXNativeTarget "Drilldown WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF8DCDC51C437DF6009570C7 /* Debug */,
+				BF8DCDC61C437DF6009570C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BF8DCDC81C437DF6009570C7 /* Build configuration list for PBXNativeTarget "Drilldown WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF8DCDC91C437DF6009570C7 /* Debug */,
+				BF8DCDCA1C437DF6009570C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BF8DCDCC1C437DF6009570C7 /* Build configuration list for PBXNativeTarget "Drilldown" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF8DCDCD1C437DF6009570C7 /* Debug */,
+				BF8DCDCE1C437DF6009570C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BF8DCDCF1C437DF6009570C7 /* Build configuration list for PBXNativeTarget "DrilldownTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF8DCDD01C437DF6009570C7 /* Debug */,
+				BF8DCDD11C437DF6009570C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BF8DCDD21C437DF6009570C7 /* Build configuration list for PBXNativeTarget "DrilldownUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF8DCDD31C437DF6009570C7 /* Debug */,
+				BF8DCDD41C437DF6009570C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BF8DCD731C437DF5009570C7 /* Project object */;
+}

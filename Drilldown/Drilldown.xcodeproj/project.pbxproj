@@ -22,6 +22,8 @@
 		BF8DCDBC1C437DF6009570C7 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8DCDBB1C437DF6009570C7 /* ExtensionDelegate.swift */; };
 		BF8DCDBE1C437DF6009570C7 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8DCDBD1C437DF6009570C7 /* NotificationController.swift */; };
 		BF8DCDC01C437DF6009570C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF8DCDBF1C437DF6009570C7 /* Assets.xcassets */; };
+		BF8DCDD71C438990009570C7 /* Communication.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8DCDD61C438990009570C7 /* Communication.swift */; };
+		BF8DCDDA1C43E1A5009570C7 /* FeaturedTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8DCDD91C43E1A5009570C7 /* FeaturedTableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +107,8 @@
 		BF8DCDBD1C437DF6009570C7 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		BF8DCDBF1C437DF6009570C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF8DCDC11C437DF6009570C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF8DCDD61C438990009570C7 /* Communication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Communication.swift; sourceTree = "<group>"; };
+		BF8DCDD91C43E1A5009570C7 /* FeaturedTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeaturedTableView.swift; path = Views/FeaturedTableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +170,8 @@
 		BF8DCD7D1C437DF5009570C7 /* Drilldown */ = {
 			isa = PBXGroup;
 			children = (
+				BF8DCDD81C43E16C009570C7 /* Views */,
+				BF8DCDD51C438953009570C7 /* Communication */,
 				BF8DCD7E1C437DF5009570C7 /* AppDelegate.swift */,
 				BF8DCD801C437DF5009570C7 /* ViewController.swift */,
 				BF8DCD821C437DF5009570C7 /* Main.storyboard */,
@@ -223,6 +229,22 @@
 				BF8DCDB81C437DF6009570C7 /* PushNotificationPayload.apns */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BF8DCDD51C438953009570C7 /* Communication */ = {
+			isa = PBXGroup;
+			children = (
+				BF8DCDD61C438990009570C7 /* Communication.swift */,
+			);
+			name = Communication;
+			sourceTree = "<group>";
+		};
+		BF8DCDD81C43E16C009570C7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BF8DCDD91C43E1A5009570C7 /* FeaturedTableView.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -329,6 +351,7 @@
 				TargetAttributes = {
 					BF8DCD7A1C437DF5009570C7 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = MZ45TX74QY;
 					};
 					BF8DCD8E1C437DF5009570C7 = {
 						CreatedOnToolsVersion = 7.2;
@@ -340,9 +363,11 @@
 					};
 					BF8DCDA21C437DF6009570C7 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = MZ45TX74QY;
 					};
 					BF8DCDB11C437DF6009570C7 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = MZ45TX74QY;
 					};
 				};
 			};
@@ -418,7 +443,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF8DCD811C437DF5009570C7 /* ViewController.swift in Sources */,
+				BF8DCDDA1C43E1A5009570C7 /* FeaturedTableView.swift in Sources */,
 				BF8DCD7F1C437DF5009570C7 /* AppDelegate.swift in Sources */,
+				BF8DCDD71C438990009570C7 /* Communication.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -587,10 +614,13 @@
 		BF8DCDC51C437DF6009570C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Drilldown WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ph.Drilldown.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -601,10 +631,13 @@
 		BF8DCDC61C437DF6009570C7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Drilldown WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ph.Drilldown.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -616,11 +649,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				IBSC_MODULE = Drilldown_WatchKit_Extension;
 				INFOPLIST_FILE = "Drilldown WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = ph.Drilldown.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -632,11 +668,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				IBSC_MODULE = Drilldown_WatchKit_Extension;
 				INFOPLIST_FILE = "Drilldown WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = ph.Drilldown.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -648,10 +687,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Drilldown/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ph.Drilldown;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -659,10 +701,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Drilldown/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ph.Drilldown;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -733,6 +778,7 @@
 				BF8DCDC61C437DF6009570C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BF8DCDC81C437DF6009570C7 /* Build configuration list for PBXNativeTarget "Drilldown WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -741,6 +787,7 @@
 				BF8DCDCA1C437DF6009570C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BF8DCDCC1C437DF6009570C7 /* Build configuration list for PBXNativeTarget "Drilldown" */ = {
 			isa = XCConfigurationList;
@@ -749,6 +796,7 @@
 				BF8DCDCE1C437DF6009570C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BF8DCDCF1C437DF6009570C7 /* Build configuration list for PBXNativeTarget "DrilldownTests" */ = {
 			isa = XCConfigurationList;
@@ -757,6 +805,7 @@
 				BF8DCDD11C437DF6009570C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BF8DCDD21C437DF6009570C7 /* Build configuration list for PBXNativeTarget "DrilldownUITests" */ = {
 			isa = XCConfigurationList;
@@ -765,6 +814,7 @@
 				BF8DCDD41C437DF6009570C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

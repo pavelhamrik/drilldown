@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF52C9D01C468136007704C9 /* Articles.json in Resources */ = {isa = PBXBuildFile; fileRef = BF52C9CF1C468136007704C9 /* Articles.json */; };
+		BF52C9D21C468184007704C9 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF52C9D11C468184007704C9 /* Article.swift */; };
+		BF52C9D31C4681AA007704C9 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF52C9D11C468184007704C9 /* Article.swift */; };
+		BF52C9D41C4681AD007704C9 /* Articles.json in Resources */ = {isa = PBXBuildFile; fileRef = BF52C9CF1C468136007704C9 /* Articles.json */; };
+		BF52C9D71C469048007704C9 /* ArticleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF52C9D61C469048007704C9 /* ArticleController.swift */; };
+		BF52C9D91C46B365007704C9 /* DateHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF52C9D81C46B365007704C9 /* DateHelpers.swift */; };
+		BF52C9DB1C46B3E1007704C9 /* DateHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF52C9D81C46B365007704C9 /* DateHelpers.swift */; };
+		BF52C9DD1C46F210007704C9 /* ArticleRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF52C9DC1C46F210007704C9 /* ArticleRowController.swift */; };
+		BF8021581C4664E000E41B83 /* ArticlesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8021571C4664E000E41B83 /* ArticlesController.swift */; };
 		BF8DCD7F1C437DF5009570C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8DCD7E1C437DF5009570C7 /* AppDelegate.swift */; };
 		BF8DCD811C437DF5009570C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8DCD801C437DF5009570C7 /* ViewController.swift */; };
 		BF8DCD841C437DF5009570C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF8DCD821C437DF5009570C7 /* Main.storyboard */; };
@@ -18,7 +27,6 @@
 		BF8DCDAA1C437DF6009570C7 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF8DCDA81C437DF6009570C7 /* Interface.storyboard */; };
 		BF8DCDAC1C437DF6009570C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF8DCDAB1C437DF6009570C7 /* Assets.xcassets */; };
 		BF8DCDB31C437DF6009570C7 /* Drilldown WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BF8DCDB21C437DF6009570C7 /* Drilldown WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		BF8DCDBA1C437DF6009570C7 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8DCDB91C437DF6009570C7 /* InterfaceController.swift */; };
 		BF8DCDBC1C437DF6009570C7 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8DCDBB1C437DF6009570C7 /* ExtensionDelegate.swift */; };
 		BF8DCDBE1C437DF6009570C7 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8DCDBD1C437DF6009570C7 /* NotificationController.swift */; };
 		BF8DCDC01C437DF6009570C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF8DCDBF1C437DF6009570C7 /* Assets.xcassets */; };
@@ -83,6 +91,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BF52C9CF1C468136007704C9 /* Articles.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Articles.json; path = "Drilldown Shared/Articles.json"; sourceTree = "<group>"; };
+		BF52C9D11C468184007704C9 /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Article.swift; path = "Drilldown Shared/Article.swift"; sourceTree = "<group>"; };
+		BF52C9D61C469048007704C9 /* ArticleController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleController.swift; sourceTree = "<group>"; };
+		BF52C9D81C46B365007704C9 /* DateHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateHelpers.swift; path = "Drilldown Shared/Helpers/DateHelpers.swift"; sourceTree = "<group>"; };
+		BF52C9DC1C46F210007704C9 /* ArticleRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleRowController.swift; sourceTree = "<group>"; };
+		BF8021571C4664E000E41B83 /* ArticlesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticlesController.swift; sourceTree = "<group>"; };
 		BF8DCD7B1C437DF5009570C7 /* Drilldown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Drilldown.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF8DCD7E1C437DF5009570C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF8DCD801C437DF5009570C7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -102,7 +116,6 @@
 		BF8DCDAD1C437DF6009570C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF8DCDB21C437DF6009570C7 /* Drilldown WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Drilldown WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF8DCDB81C437DF6009570C7 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
-		BF8DCDB91C437DF6009570C7 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
 		BF8DCDBB1C437DF6009570C7 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		BF8DCDBD1C437DF6009570C7 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		BF8DCDBF1C437DF6009570C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -143,9 +156,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BF52C9CE1C4680F3007704C9 /* Drilldown Shared */ = {
+			isa = PBXGroup;
+			children = (
+				BF52C9DA1C46B36A007704C9 /* Helpers */,
+				BF52C9CF1C468136007704C9 /* Articles.json */,
+				BF52C9D11C468184007704C9 /* Article.swift */,
+			);
+			name = "Drilldown Shared";
+			sourceTree = "<group>";
+		};
+		BF52C9DA1C46B36A007704C9 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				BF52C9D81C46B365007704C9 /* DateHelpers.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
 		BF8DCD721C437DF5009570C7 = {
 			isa = PBXGroup;
 			children = (
+				BF52C9CE1C4680F3007704C9 /* Drilldown Shared */,
 				BF8DCD7D1C437DF5009570C7 /* Drilldown */,
 				BF8DCD921C437DF5009570C7 /* DrilldownTests */,
 				BF8DCD9D1C437DF5009570C7 /* DrilldownUITests */,
@@ -213,12 +245,14 @@
 		BF8DCDB61C437DF6009570C7 /* Drilldown WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				BF8DCDB91C437DF6009570C7 /* InterfaceController.swift */,
 				BF8DCDBB1C437DF6009570C7 /* ExtensionDelegate.swift */,
 				BF8DCDBD1C437DF6009570C7 /* NotificationController.swift */,
 				BF8DCDBF1C437DF6009570C7 /* Assets.xcassets */,
 				BF8DCDC11C437DF6009570C7 /* Info.plist */,
 				BF8DCDB71C437DF6009570C7 /* Supporting Files */,
+				BF8021571C4664E000E41B83 /* ArticlesController.swift */,
+				BF52C9D61C469048007704C9 /* ArticleController.swift */,
+				BF52C9DC1C46F210007704C9 /* ArticleRowController.swift */,
 			);
 			path = "Drilldown WatchKit Extension";
 			sourceTree = "<group>";
@@ -398,6 +432,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF52C9D01C468136007704C9 /* Articles.json in Resources */,
 				BF8DCD891C437DF5009570C7 /* LaunchScreen.storyboard in Resources */,
 				BF8DCD861C437DF5009570C7 /* Assets.xcassets in Resources */,
 				BF8DCD841C437DF5009570C7 /* Main.storyboard in Resources */,
@@ -431,6 +466,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF52C9D41C4681AD007704C9 /* Articles.json in Resources */,
 				BF8DCDC01C437DF6009570C7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -446,6 +482,8 @@
 				BF8DCDDA1C43E1A5009570C7 /* FeaturedTableView.swift in Sources */,
 				BF8DCD7F1C437DF5009570C7 /* AppDelegate.swift in Sources */,
 				BF8DCDD71C438990009570C7 /* Communication.swift in Sources */,
+				BF52C9D21C468184007704C9 /* Article.swift in Sources */,
+				BF52C9DB1C46B3E1007704C9 /* DateHelpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,9 +507,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF52C9DD1C46F210007704C9 /* ArticleRowController.swift in Sources */,
 				BF8DCDBE1C437DF6009570C7 /* NotificationController.swift in Sources */,
+				BF52C9D71C469048007704C9 /* ArticleController.swift in Sources */,
 				BF8DCDBC1C437DF6009570C7 /* ExtensionDelegate.swift in Sources */,
-				BF8DCDBA1C437DF6009570C7 /* InterfaceController.swift in Sources */,
+				BF8021581C4664E000E41B83 /* ArticlesController.swift in Sources */,
+				BF52C9D31C4681AA007704C9 /* Article.swift in Sources */,
+				BF52C9D91C46B365007704C9 /* DateHelpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

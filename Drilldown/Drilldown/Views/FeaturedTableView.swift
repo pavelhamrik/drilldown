@@ -11,6 +11,9 @@ import UIKit
 class FeaturedTableView: UITableViewController {
     
     
+    @IBOutlet weak var featuredTable: UITableView!
+    
+    
     let tableData = [
         [
             ["Name": "Wired 1", "Meta": "Subtitle"],
@@ -20,18 +23,15 @@ class FeaturedTableView: UITableViewController {
             ["Name": "Wired 5", "Meta": "Subtitle"]
         ],
         [
-            ["Name": "TechCrunch 1", "Meta": "Subtitle"],
+            ["Name": "TechCrunch 1", "Meta": "This subtitle will likely be too long to fit a single row. Let's see what happens with it."],
             ["Name": "TechCrunch 2", "Meta": "Subtitle"],
-            ["Name": "TechCrunch 3", "Meta": "Subtitle"],
-            ["Name": "TechCrunch 4", "Meta": "Subtitle"],
-            ["Name": "TechCrunch 5", "Meta": "Subtitle"]
+            ["Name": "TechCrunch 3", "Meta": "Subtitle"]
         ],
         [
             ["Name": "Engadget 1", "Meta": "Subtitle"],
             ["Name": "Engadget 2", "Meta": "Subtitle"],
             ["Name": "Engadget 3", "Meta": "Subtitle"],
-            ["Name": "Engadget 4", "Meta": "Subtitle"],
-            ["Name": "Engadget 5", "Meta": "Subtitle"]
+            ["Name": "Engadget 4", "Meta": "Subtitle"]
         ]
     ]
     
@@ -54,8 +54,6 @@ class FeaturedTableView: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    // MARK: - Table view data source
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
 
@@ -87,8 +85,6 @@ class FeaturedTableView: UITableViewController {
         return tableSections[section]
         
     }
-        
-
     
 
     /*

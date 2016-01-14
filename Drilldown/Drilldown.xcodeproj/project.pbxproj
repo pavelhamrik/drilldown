@@ -413,6 +413,11 @@
 					BF8DCD7A1C437DF5009570C7 = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = MZ45TX74QY;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					BF8DCD8E1C437DF5009570C7 = {
 						CreatedOnToolsVersion = 7.2;

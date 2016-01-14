@@ -128,11 +128,13 @@
                             </items>
                         </group>
                         <label alignment="left" hidden="YES" text="Drilldown" id="ht4-Wo-sOO"/>
-                        <label alignment="left" hidden="YES" text="Label" id="S7o-cC-hEn"/>
-                        <label alignment="left" text="3 mins fresh" id="rs7-wY-Wuq">
+                        <label alignment="left" hidden="YES" text="3 min ago" id="S7o-cC-hEn"/>
+                        <label alignment="left" text="3 min fresh" id="rs7-wY-Wuq">
                             <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         </label>
-                        <label alignment="left" text="Title" id="1M5-OC-3hU"/>
+                        <label alignment="left" text="Title" id="1M5-OC-3hU">
+                            <color key="textColor" red="0.94117647059999998" green="0.1176470588" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </label>
                         <label alignment="left" text="Find More in Drilldown" id="BvE-6N-ysb"/>
                     </items>
                     <connections>

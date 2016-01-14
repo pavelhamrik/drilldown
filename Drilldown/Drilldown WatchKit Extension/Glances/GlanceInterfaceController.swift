@@ -34,6 +34,7 @@ class GlanceInterfaceController: WKInterfaceController {
         
         let articles = Article.allArticles()
         titleLabel.setText(articles.first?.title)
+        timeLabel.setText(DateHelpers.formatDate("\(articles.first?.date)"))
         
     }
 

@@ -98,7 +98,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="454" y="345"/>
+            <point key="canvasLocation" x="468" y="345"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
@@ -106,6 +106,7 @@
                 <notificationController id="YCC-NB-fut">
                     <items>
                         <label alignment="left" text="Alert Label" id="IdU-wH-bcW"/>
+                        <label alignment="left" text="Label" id="Qy9-sv-fYI"/>
                     </items>
                     <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
                     <connections>
@@ -116,10 +117,41 @@
             </objects>
             <point key="canvasLocation" x="220" y="643"/>
         </scene>
+        <!--Glance Interface Controller-->
+        <scene sceneID="T6j-Ro-8D6">
+            <objects>
+                <glanceController topTemplateType="groupLeftSmall" bottomTemplateType="body6Footer" id="XyB-U1-I1w" customClass="GlanceInterfaceController" customModule="Drilldown_WatchKit_Extension">
+                    <items>
+                        <group alignment="left" id="H0q-wj-GJ6">
+                            <items>
+                                <imageView width="1" height="1" alignment="left" image="DrilldownCircle" id="iFv-QT-DhK"/>
+                            </items>
+                        </group>
+                        <label alignment="left" hidden="YES" text="Drilldown" id="ht4-Wo-sOO"/>
+                        <label alignment="left" hidden="YES" text="Label" id="S7o-cC-hEn"/>
+                        <label alignment="left" text="3 mins fresh" id="rs7-wY-Wuq">
+                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        </label>
+                        <label alignment="left" text="Title" id="1M5-OC-3hU"/>
+                        <label alignment="left" text="Find More in Drilldown" id="BvE-6N-ysb"/>
+                    </items>
+                    <connections>
+                        <outlet property="timeLabel" destination="rs7-wY-Wuq" id="Bzx-yq-OPJ"/>
+                        <outlet property="titleLabel" destination="1M5-OC-3hU" id="YVB-po-PX3"/>
+                    </connections>
+                </glanceController>
+            </objects>
+            <point key="canvasLocation" x="220" y="942"/>
+        </scene>
         <!--Notification Controller-->
         <scene sceneID="ZPc-GJ-vnh">
             <objects>
-                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="Drilldown_WatchKit_App" customModuleProvider="target"/>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="Drilldown_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label alignment="left" text="Label" id="7qW-5L-LoD"/>
+                        <label alignment="left" text="Label" id="zIg-dO-se8"/>
+                    </items>
+                </controller>
             </objects>
             <point key="canvasLocation" x="468" y="643"/>
         </scene>

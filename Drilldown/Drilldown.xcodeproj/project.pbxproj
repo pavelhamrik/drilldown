@@ -16,9 +16,9 @@
 		BF52C9DB1C46B3E1007704C9 /* DateHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF52C9D81C46B365007704C9 /* DateHelpers.swift */; };
 		BF52C9DD1C46F210007704C9 /* ArticleRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF52C9DC1C46F210007704C9 /* ArticleRowController.swift */; };
 		BF5638911C47FCC000E18B05 /* GlanceInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5638901C47FCC000E18B05 /* GlanceInterfaceController.swift */; };
+		BF5638D31C48F80000E18B05 /* Drilldown.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BF5638D11C48F80000E18B05 /* Drilldown.xcdatamodeld */; };
 		BF8021581C4664E000E41B83 /* ArticlesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8021571C4664E000E41B83 /* ArticlesController.swift */; };
 		BF8DCD7F1C437DF5009570C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8DCD7E1C437DF5009570C7 /* AppDelegate.swift */; };
-		BF8DCD811C437DF5009570C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8DCD801C437DF5009570C7 /* ViewController.swift */; };
 		BF8DCD841C437DF5009570C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF8DCD821C437DF5009570C7 /* Main.storyboard */; };
 		BF8DCD861C437DF5009570C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF8DCD851C437DF5009570C7 /* Assets.xcassets */; };
 		BF8DCD891C437DF5009570C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF8DCD871C437DF5009570C7 /* LaunchScreen.storyboard */; };
@@ -33,6 +33,9 @@
 		BF8DCDC01C437DF6009570C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF8DCDBF1C437DF6009570C7 /* Assets.xcassets */; };
 		BF8DCDD71C438990009570C7 /* Communication.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8DCDD61C438990009570C7 /* Communication.swift */; };
 		BF8DCDDA1C43E1A5009570C7 /* FeaturedTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8DCDD91C43E1A5009570C7 /* FeaturedTableView.swift */; };
+		BFB036181C49520600181A51 /* HackerNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB036171C49520600181A51 /* HackerNews.swift */; };
+		BFB0361A1C49531800181A51 /* JSONHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB036191C49531800181A51 /* JSONHelpers.swift */; };
+		BFB0361C1C49536B00181A51 /* CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB0361B1C49536B00181A51 /* CoreDataHelpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,10 +101,10 @@
 		BF52C9D81C46B365007704C9 /* DateHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateHelpers.swift; path = "Drilldown Shared/Helpers/DateHelpers.swift"; sourceTree = "<group>"; };
 		BF52C9DC1C46F210007704C9 /* ArticleRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleRowController.swift; sourceTree = "<group>"; };
 		BF5638901C47FCC000E18B05 /* GlanceInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GlanceInterfaceController.swift; path = Glances/GlanceInterfaceController.swift; sourceTree = "<group>"; };
+		BF5638D21C48F80000E18B05 /* Drilldown.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Drilldown.xcdatamodel; sourceTree = "<group>"; };
 		BF8021571C4664E000E41B83 /* ArticlesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticlesController.swift; sourceTree = "<group>"; };
 		BF8DCD7B1C437DF5009570C7 /* Drilldown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Drilldown.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF8DCD7E1C437DF5009570C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BF8DCD801C437DF5009570C7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BF8DCD831C437DF5009570C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BF8DCD851C437DF5009570C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF8DCD881C437DF5009570C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -124,6 +127,10 @@
 		BF8DCDC11C437DF6009570C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF8DCDD61C438990009570C7 /* Communication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Communication.swift; sourceTree = "<group>"; };
 		BF8DCDD91C43E1A5009570C7 /* FeaturedTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeaturedTableView.swift; path = Views/FeaturedTableView.swift; sourceTree = "<group>"; };
+		BFB036171C49520600181A51 /* HackerNews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HackerNews.swift; path = Communication/HackerNews.swift; sourceTree = "<group>"; };
+		BFB036191C49531800181A51 /* JSONHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JSONHelpers.swift; path = "Drilldown Shared/Helpers/JSONHelpers.swift"; sourceTree = "<group>"; };
+		BFB0361B1C49536B00181A51 /* CoreDataHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoreDataHelpers.swift; path = "Drilldown Shared/Helpers/CoreDataHelpers.swift"; sourceTree = "<group>"; };
+		BFB0361D1C497A1300181A51 /* Drilldown 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Drilldown 2.xcdatamodel"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +179,8 @@
 			isa = PBXGroup;
 			children = (
 				BF52C9D81C46B365007704C9 /* DateHelpers.swift */,
+				BFB036191C49531800181A51 /* JSONHelpers.swift */,
+				BFB0361B1C49536B00181A51 /* CoreDataHelpers.swift */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -233,11 +242,11 @@
 				BF8DCDD81C43E16C009570C7 /* Views */,
 				BF8DCDD51C438953009570C7 /* Communication */,
 				BF8DCD7E1C437DF5009570C7 /* AppDelegate.swift */,
-				BF8DCD801C437DF5009570C7 /* ViewController.swift */,
 				BF8DCD821C437DF5009570C7 /* Main.storyboard */,
 				BF8DCD851C437DF5009570C7 /* Assets.xcassets */,
 				BF8DCD871C437DF5009570C7 /* LaunchScreen.storyboard */,
 				BF8DCD8A1C437DF5009570C7 /* Info.plist */,
+				BF5638D11C48F80000E18B05 /* Drilldown.xcdatamodeld */,
 			);
 			path = Drilldown;
 			sourceTree = "<group>";
@@ -296,6 +305,7 @@
 			isa = PBXGroup;
 			children = (
 				BF8DCDD61C438990009570C7 /* Communication.swift */,
+				BFB036171C49520600181A51 /* HackerNews.swift */,
 			);
 			name = Communication;
 			sourceTree = "<group>";
@@ -510,12 +520,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF8DCD811C437DF5009570C7 /* ViewController.swift in Sources */,
+				BF5638D31C48F80000E18B05 /* Drilldown.xcdatamodeld in Sources */,
 				BF8DCDDA1C43E1A5009570C7 /* FeaturedTableView.swift in Sources */,
 				BF8DCD7F1C437DF5009570C7 /* AppDelegate.swift in Sources */,
 				BF8DCDD71C438990009570C7 /* Communication.swift in Sources */,
+				BFB036181C49520600181A51 /* HackerNews.swift in Sources */,
 				BF52C9D21C468184007704C9 /* Article.swift in Sources */,
+				BFB0361C1C49536B00181A51 /* CoreDataHelpers.swift in Sources */,
 				BF52C9DB1C46B3E1007704C9 /* DateHelpers.swift in Sources */,
+				BFB0361A1C49531800181A51 /* JSONHelpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -892,6 +905,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BF5638D11C48F80000E18B05 /* Drilldown.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BFB0361D1C497A1300181A51 /* Drilldown 2.xcdatamodel */,
+				BF5638D21C48F80000E18B05 /* Drilldown.xcdatamodel */,
+			);
+			currentVersion = BFB0361D1C497A1300181A51 /* Drilldown 2.xcdatamodel */;
+			path = Drilldown.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = BF8DCD731C437DF5009570C7 /* Project object */;
 }

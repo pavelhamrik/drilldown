@@ -7,35 +7,21 @@
 //
 
 import UIKit
+import CoreData
 
 class FeaturedTableView: UITableViewController {
     
     
     @IBOutlet weak var featuredTable: UITableView!
     
+    var articles = [NSManagedObject]()
     
-    let tableData = [
-        [
-            ["Name": "Wired 1", "Meta": "Subtitle"],
-            ["Name": "Wired 2", "Meta": "Subtitle"],
-            ["Name": "Wired 3", "Meta": "Subtitle"],
-            ["Name": "Wired 4", "Meta": "Subtitle"],
-            ["Name": "Wired 5", "Meta": "Subtitle"]
-        ],
-        [
-            ["Name": "TechCrunch 1", "Meta": "This subtitle will likely be too long to fit a single row. Let's see what happens with it."],
-            ["Name": "TechCrunch 2", "Meta": "Subtitle"],
-            ["Name": "TechCrunch 3", "Meta": "Subtitle"]
-        ],
-        [
-            ["Name": "Engadget 1", "Meta": "Subtitle"],
-            ["Name": "Engadget 2", "Meta": "Subtitle"],
-            ["Name": "Engadget 3", "Meta": "Subtitle"],
-            ["Name": "Engadget 4", "Meta": "Subtitle"]
-        ]
-    ]
     
-    let tableSections = ["Wired", "TechCrunch", "Engadget"]
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        articles = CoreDataHelpers.load("Article")
+    }
     
 
     override func viewDidLoad() {
@@ -56,34 +42,73 @@ class FeaturedTableView: UITableViewController {
     
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-
-        return tableSections.count
-        
+        return Communication.sources.count
     }
     
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
-        return tableData[section].count
-        
+        //return tableData[section].count
+        return articles.count
     }
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        
         let cell = tableView.dequeueReusableCellWithIdentifier("FeaturedCell", forIndexPath: indexPath)
-
-        cell.textLabel?.text = tableData[indexPath.section][indexPath.row]["Name"]
-        cell.detailTextLabel?.text = tableData[indexPath.section][indexPath.row]["Meta"]
+        let article = articles[indexPath.row]
+        
+        cell.textLabel?.text = article.valueForKey("title") as? String
+        cell.detailTextLabel?.text = article.valueForKey("source") as? String
 
         return cell
-        
     }
     
+    
     override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return Communication.sources[section]
+    }
+    
+    
+    @IBAction func reloadArticles(sender: AnyObject) {
+        Communication.reloadArticles()
+    }
+    
+    
+    @IBAction func addName(sender: AnyObject) {
+        let alert = UIAlertController(title: "New Article",
+            message: "Add something here",
+            preferredStyle: .Alert)
         
-        return tableSections[section]
+        let saveAction = UIAlertAction(title: "Save",
+            style: .Default,
+            handler: { (action:UIAlertAction) -> Void in
+                
+                let textField = alert.textFields!.first
+                let textField2 = alert.textFields![1]
+                self.saveArticle(textField!.text!, source: textField2.text!)
+                self.tableView.reloadData()
+        })
         
+        let cancelAction = UIAlertAction(title: "Cancel",
+            style: .Default) { (action: UIAlertAction) -> Void in
+        }
+        
+        alert.addTextFieldWithConfigurationHandler {
+            (textField: UITextField) -> Void in
+        }
+        alert.addTextFieldWithConfigurationHandler {
+            (textField2: UITextField) -> Void in
+        }
+        
+        alert.addAction(cancelAction)
+        alert.addAction(saveAction)
+        
+        presentViewController(alert, animated: true, completion: nil)
+    }
+    
+    
+    func saveArticle(title: String, source: String) {
+        let data = ["title": title, "source": source]
+        CoreDataHelpers.save("Article", values: data)
     }
     
 

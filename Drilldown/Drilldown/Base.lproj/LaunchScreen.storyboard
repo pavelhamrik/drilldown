@@ -17,25 +17,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ir-s5-MSw">
-                                <rect key="frame" x="150" y="219" width="300" height="62"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Drilldown">
-                                        <attributes>
-                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="36" name="HelveticaNeue-Bold"/>
-                                            <font key="NSOriginalFont" size="36" name="HelveticaNeue-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Drilldown" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ir-s5-MSw">
+                                <rect key="frame" x="223" y="280" width="155" height="41"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="34"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GlyphInCircle" translatesAutoresizingMaskIntoConstraints="NO" id="off-cx-5On">
+                                <rect key="frame" x="262" y="197" width="76" height="76"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.94117647059999998" green="0.1176470588" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="0Ir-s5-MSw" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="KzE-rw-zjs"/>
-                            <constraint firstItem="0Ir-s5-MSw" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-50" id="c9L-m4-dvI"/>
+                            <constraint firstItem="0Ir-s5-MSw" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="3eb-I2-14v"/>
+                            <constraint firstItem="0Ir-s5-MSw" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="IIw-LS-mZN"/>
+                            <constraint firstItem="off-cx-5On" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="avC-cW-tEc"/>
+                            <constraint firstItem="off-cx-5On" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-65" id="vGs-6a-P8y"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -44,4 +41,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="GlyphInCircle" width="76" height="76"/>
+    </resources>
 </document>

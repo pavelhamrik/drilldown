@@ -48,29 +48,6 @@ class Article {
     }
     
     
-    
-    class func downloadArticles() -> [Article] {
-        
-        var articles = [Article]()
-        
-        if let data = NSData(contentsOfURL: NSURL(string: "http://www.url.url")!) {
-            do {
-                let json = try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.AllowFragments) as! [Dictionary<String, String>]
-                for dict in json {
-                    let article = Article(dictionary: dict)
-                    articles.append(article)
-                }
-            } catch {
-                print(error)
-            }
-        }
-        
-
-        
-        return articles
-        
-    }
-    
     private func getJSON(urlToRequest: String) -> NSData{
         return NSData(contentsOfURL: NSURL(string: urlToRequest)!)!
     }

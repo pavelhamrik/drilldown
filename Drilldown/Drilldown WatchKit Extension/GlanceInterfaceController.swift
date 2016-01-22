@@ -32,9 +32,9 @@ class GlanceInterfaceController: WKInterfaceController {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
         
-        let articles = Article.allArticles()
-        titleLabel.setText(articles.first?.title)
-        timeLabel.setText(DateHelpers.formatDate("\(articles.first?.date)"))
+        let article = Article.newestArticle()
+        titleLabel.setText(article.title)
+        timeLabel.setText(DateHelpers.formatDate("\(article.date)"))
         
     }
 

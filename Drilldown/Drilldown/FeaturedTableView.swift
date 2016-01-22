@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import DrilldownData
 import CoreData
 
 class FeaturedTableView: UITableViewController {
@@ -19,8 +20,7 @@ class FeaturedTableView: UITableViewController {
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        
-        articles = CoreDataHelpers.load("Article")
+        articles = DrilldownData.load("Article")
     }
     
 
@@ -47,7 +47,6 @@ class FeaturedTableView: UITableViewController {
     
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        //return tableData[section].count
         return articles.count
     }
 
@@ -70,45 +69,8 @@ class FeaturedTableView: UITableViewController {
     
     @IBAction func reloadArticles(sender: AnyObject) {
         Communication.reloadArticles()
-    }
-    
-    
-    @IBAction func addName(sender: AnyObject) {
-        let alert = UIAlertController(title: "New Article",
-            message: "Add something here",
-            preferredStyle: .Alert)
-        
-        let saveAction = UIAlertAction(title: "Save",
-            style: .Default,
-            handler: { (action:UIAlertAction) -> Void in
-                
-                let textField = alert.textFields!.first
-                let textField2 = alert.textFields![1]
-                self.saveArticle(textField!.text!, source: textField2.text!)
-                self.tableView.reloadData()
-        })
-        
-        let cancelAction = UIAlertAction(title: "Cancel",
-            style: .Default) { (action: UIAlertAction) -> Void in
-        }
-        
-        alert.addTextFieldWithConfigurationHandler {
-            (textField: UITextField) -> Void in
-        }
-        alert.addTextFieldWithConfigurationHandler {
-            (textField2: UITextField) -> Void in
-        }
-        
-        alert.addAction(cancelAction)
-        alert.addAction(saveAction)
-        
-        presentViewController(alert, animated: true, completion: nil)
-    }
-    
-    
-    func saveArticle(title: String, source: String) {
-        let data = ["title": title, "source": source]
-        CoreDataHelpers.save("Article", values: data)
+        articles = DrilldownData.load("Article")
+        featuredTable.reloadData()
     }
     
 

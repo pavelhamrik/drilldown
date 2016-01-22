@@ -7,16 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF061EC71C4AE4AD0088AC49 /* DrilldownData.h in Headers */ = {isa = PBXBuildFile; fileRef = BF061EC61C4AE4AD0088AC49 /* DrilldownData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF061ECE1C4AE4AD0088AC49 /* DrilldownData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF061EC41C4AE4AD0088AC49 /* DrilldownData.framework */; };
+		BF061ED51C4AE4AE0088AC49 /* DrilldownDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF061ED41C4AE4AE0088AC49 /* DrilldownDataTests.swift */; };
+		BF061ED91C4AE4AE0088AC49 /* DrilldownData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF061EC41C4AE4AD0088AC49 /* DrilldownData.framework */; };
+		BF061EDA1C4AE4AE0088AC49 /* DrilldownData.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BF061EC41C4AE4AD0088AC49 /* DrilldownData.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BF061EE21C4AE4D60088AC49 /* DrilldownData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF061EE11C4AE4D60088AC49 /* DrilldownData.swift */; };
+		BF45DB6F1C4AED6800FB3E55 /* DrilldownData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BF45DB6D1C4AED6800FB3E55 /* DrilldownData.xcdatamodeld */; };
+		BF45DB721C4AEDFF00FB3E55 /* ArticleWKExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF45DB711C4AEDFF00FB3E55 /* ArticleWKExtension.swift */; };
+		BF45DB741C4AEF6400FB3E55 /* ArticleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF45DB731C4AEF6400FB3E55 /* ArticleExtension.swift */; };
+		BF45DB751C4AEFE300FB3E55 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF52C9D11C468184007704C9 /* Article.swift */; };
 		BF52C9D01C468136007704C9 /* Articles.json in Resources */ = {isa = PBXBuildFile; fileRef = BF52C9CF1C468136007704C9 /* Articles.json */; };
 		BF52C9D21C468184007704C9 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF52C9D11C468184007704C9 /* Article.swift */; };
-		BF52C9D31C4681AA007704C9 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF52C9D11C468184007704C9 /* Article.swift */; };
 		BF52C9D41C4681AD007704C9 /* Articles.json in Resources */ = {isa = PBXBuildFile; fileRef = BF52C9CF1C468136007704C9 /* Articles.json */; };
 		BF52C9D71C469048007704C9 /* ArticleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF52C9D61C469048007704C9 /* ArticleController.swift */; };
 		BF52C9D91C46B365007704C9 /* DateHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF52C9D81C46B365007704C9 /* DateHelpers.swift */; };
 		BF52C9DB1C46B3E1007704C9 /* DateHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF52C9D81C46B365007704C9 /* DateHelpers.swift */; };
 		BF52C9DD1C46F210007704C9 /* ArticleRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF52C9DC1C46F210007704C9 /* ArticleRowController.swift */; };
 		BF5638911C47FCC000E18B05 /* GlanceInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5638901C47FCC000E18B05 /* GlanceInterfaceController.swift */; };
-		BF5638D31C48F80000E18B05 /* Drilldown.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BF5638D11C48F80000E18B05 /* Drilldown.xcdatamodeld */; };
 		BF8021581C4664E000E41B83 /* ArticlesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8021571C4664E000E41B83 /* ArticlesController.swift */; };
 		BF8DCD7F1C437DF5009570C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8DCD7E1C437DF5009570C7 /* AppDelegate.swift */; };
 		BF8DCD841C437DF5009570C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF8DCD821C437DF5009570C7 /* Main.storyboard */; };
@@ -33,12 +41,36 @@
 		BF8DCDC01C437DF6009570C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF8DCDBF1C437DF6009570C7 /* Assets.xcassets */; };
 		BF8DCDD71C438990009570C7 /* Communication.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8DCDD61C438990009570C7 /* Communication.swift */; };
 		BF8DCDDA1C43E1A5009570C7 /* FeaturedTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8DCDD91C43E1A5009570C7 /* FeaturedTableView.swift */; };
+		BFAFB3C61C4A6DC9002C1FCD /* PreferencesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAFB3C51C4A6DC9002C1FCD /* PreferencesTableViewController.swift */; };
+		BFAFB3C81C4A6F7D002C1FCD /* PreferencesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAFB3C71C4A6F7D002C1FCD /* PreferencesTableViewCell.swift */; };
+		BFAFB3CB1C4A77F6002C1FCD /* DefaultsHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAFB3CA1C4A77F6002C1FCD /* DefaultsHelpers.swift */; };
+		BFAFB3CC1C4AB100002C1FCD /* HackerNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB036171C49520600181A51 /* HackerNews.swift */; };
+		BFAFB3D11C4AB121002C1FCD /* DefaultsHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAFB3CA1C4A77F6002C1FCD /* DefaultsHelpers.swift */; };
 		BFB036181C49520600181A51 /* HackerNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB036171C49520600181A51 /* HackerNews.swift */; };
-		BFB0361A1C49531800181A51 /* JSONHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB036191C49531800181A51 /* JSONHelpers.swift */; };
-		BFB0361C1C49536B00181A51 /* CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB0361B1C49536B00181A51 /* CoreDataHelpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		BF061ECF1C4AE4AD0088AC49 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF8DCD731C437DF5009570C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF061EC31C4AE4AD0088AC49;
+			remoteInfo = DrilldownData;
+		};
+		BF061ED11C4AE4AE0088AC49 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF8DCD731C437DF5009570C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF8DCD7A1C437DF5009570C7;
+			remoteInfo = Drilldown;
+		};
+		BF061EE91C4AE89D0088AC49 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF8DCD731C437DF5009570C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF061EC31C4AE4AD0088AC49;
+			remoteInfo = DrilldownData;
+		};
 		BF8DCD901C437DF5009570C7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BF8DCD731C437DF5009570C7 /* Project object */;
@@ -92,16 +124,36 @@
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BFA622161C4ACCCC00087CE8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BF061EDA1C4AE4AE0088AC49 /* DrilldownData.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		BF52C9CF1C468136007704C9 /* Articles.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Articles.json; path = "Drilldown Shared/Articles.json"; sourceTree = "<group>"; };
-		BF52C9D11C468184007704C9 /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Article.swift; path = "Drilldown Shared/Article.swift"; sourceTree = "<group>"; };
+		BF061EC41C4AE4AD0088AC49 /* DrilldownData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DrilldownData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF061EC61C4AE4AD0088AC49 /* DrilldownData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrilldownData.h; sourceTree = "<group>"; };
+		BF061EC81C4AE4AD0088AC49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF061ECD1C4AE4AD0088AC49 /* DrilldownDataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrilldownDataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF061ED41C4AE4AE0088AC49 /* DrilldownDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrilldownDataTests.swift; sourceTree = "<group>"; };
+		BF061ED61C4AE4AE0088AC49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF061EE11C4AE4D60088AC49 /* DrilldownData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrilldownData.swift; sourceTree = "<group>"; };
+		BF45DB6E1C4AED6800FB3E55 /* DrilldownData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DrilldownData.xcdatamodel; sourceTree = "<group>"; };
+		BF45DB711C4AEDFF00FB3E55 /* ArticleWKExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleWKExtension.swift; sourceTree = "<group>"; };
+		BF45DB731C4AEF6400FB3E55 /* ArticleExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArticleExtension.swift; path = "Drilldown Shared/ArticleExtension.swift"; sourceTree = SOURCE_ROOT; };
+		BF52C9CF1C468136007704C9 /* Articles.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Articles.json; path = "Drilldown WatchKit Extension/Articles.json"; sourceTree = SOURCE_ROOT; };
+		BF52C9D11C468184007704C9 /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Article.swift; path = "Drilldown Shared/Article.swift"; sourceTree = SOURCE_ROOT; };
 		BF52C9D61C469048007704C9 /* ArticleController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleController.swift; sourceTree = "<group>"; };
-		BF52C9D81C46B365007704C9 /* DateHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateHelpers.swift; path = "Drilldown Shared/Helpers/DateHelpers.swift"; sourceTree = "<group>"; };
+		BF52C9D81C46B365007704C9 /* DateHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateHelpers.swift; path = "Drilldown Shared/DateHelpers.swift"; sourceTree = "<group>"; };
 		BF52C9DC1C46F210007704C9 /* ArticleRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleRowController.swift; sourceTree = "<group>"; };
-		BF5638901C47FCC000E18B05 /* GlanceInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GlanceInterfaceController.swift; path = Glances/GlanceInterfaceController.swift; sourceTree = "<group>"; };
-		BF5638D21C48F80000E18B05 /* Drilldown.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Drilldown.xcdatamodel; sourceTree = "<group>"; };
+		BF5638901C47FCC000E18B05 /* GlanceInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlanceInterfaceController.swift; sourceTree = "<group>"; };
 		BF8021571C4664E000E41B83 /* ArticlesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticlesController.swift; sourceTree = "<group>"; };
 		BF8DCD7B1C437DF5009570C7 /* Drilldown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Drilldown.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF8DCD7E1C437DF5009570C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -126,18 +178,36 @@
 		BF8DCDBF1C437DF6009570C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF8DCDC11C437DF6009570C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF8DCDD61C438990009570C7 /* Communication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Communication.swift; sourceTree = "<group>"; };
-		BF8DCDD91C43E1A5009570C7 /* FeaturedTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeaturedTableView.swift; path = Views/FeaturedTableView.swift; sourceTree = "<group>"; };
-		BFB036171C49520600181A51 /* HackerNews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HackerNews.swift; path = Communication/HackerNews.swift; sourceTree = "<group>"; };
-		BFB036191C49531800181A51 /* JSONHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JSONHelpers.swift; path = "Drilldown Shared/Helpers/JSONHelpers.swift"; sourceTree = "<group>"; };
-		BFB0361B1C49536B00181A51 /* CoreDataHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoreDataHelpers.swift; path = "Drilldown Shared/Helpers/CoreDataHelpers.swift"; sourceTree = "<group>"; };
-		BFB0361D1C497A1300181A51 /* Drilldown 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Drilldown 2.xcdatamodel"; sourceTree = "<group>"; };
+		BF8DCDD91C43E1A5009570C7 /* FeaturedTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeaturedTableView.swift; sourceTree = "<group>"; };
+		BFA621F51C4ACB4D00087CE8 /* Drilldown.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Drilldown.entitlements; sourceTree = "<group>"; };
+		BFA621F61C4ACBF700087CE8 /* Drilldown WatchKit App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Drilldown WatchKit App.entitlements"; sourceTree = "<group>"; };
+		BFAFB3C51C4A6DC9002C1FCD /* PreferencesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesTableViewController.swift; sourceTree = "<group>"; };
+		BFAFB3C71C4A6F7D002C1FCD /* PreferencesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesTableViewCell.swift; sourceTree = "<group>"; };
+		BFAFB3CA1C4A77F6002C1FCD /* DefaultsHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DefaultsHelpers.swift; path = "Drilldown Shared/DefaultsHelpers.swift"; sourceTree = "<group>"; };
+		BFB036171C49520600181A51 /* HackerNews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HackerNews.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		BF061EC01C4AE4AD0088AC49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF061ECA1C4AE4AD0088AC49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF061ECE1C4AE4AD0088AC49 /* DrilldownData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BF8DCD781C437DF5009570C7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF061ED91C4AE4AE0088AC49 /* DrilldownData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,12 +235,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BF061EC51C4AE4AD0088AC49 /* DrilldownData */ = {
+			isa = PBXGroup;
+			children = (
+				BF061EC61C4AE4AD0088AC49 /* DrilldownData.h */,
+				BF061EC81C4AE4AD0088AC49 /* Info.plist */,
+				BF061EE11C4AE4D60088AC49 /* DrilldownData.swift */,
+				BF45DB6D1C4AED6800FB3E55 /* DrilldownData.xcdatamodeld */,
+			);
+			path = DrilldownData;
+			sourceTree = "<group>";
+		};
+		BF061ED31C4AE4AE0088AC49 /* DrilldownDataTests */ = {
+			isa = PBXGroup;
+			children = (
+				BF061ED41C4AE4AE0088AC49 /* DrilldownDataTests.swift */,
+				BF061ED61C4AE4AE0088AC49 /* Info.plist */,
+			);
+			path = DrilldownDataTests;
+			sourceTree = "<group>";
+		};
+		BF45DB701C4AEDE300FB3E55 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				BF52C9CF1C468136007704C9 /* Articles.json */,
+				BF45DB711C4AEDFF00FB3E55 /* ArticleWKExtension.swift */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		BF45DB761C4AF04500FB3E55 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				BF45DB731C4AEF6400FB3E55 /* ArticleExtension.swift */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
 		BF52C9CE1C4680F3007704C9 /* Drilldown Shared */ = {
 			isa = PBXGroup;
 			children = (
-				BF52C9DA1C46B36A007704C9 /* Helpers */,
-				BF52C9CF1C468136007704C9 /* Articles.json */,
 				BF52C9D11C468184007704C9 /* Article.swift */,
+				BF52C9DA1C46B36A007704C9 /* Helpers */,
 			);
 			name = "Drilldown Shared";
 			sourceTree = "<group>";
@@ -179,8 +285,7 @@
 			isa = PBXGroup;
 			children = (
 				BF52C9D81C46B365007704C9 /* DateHelpers.swift */,
-				BFB036191C49531800181A51 /* JSONHelpers.swift */,
-				BFB0361B1C49536B00181A51 /* CoreDataHelpers.swift */,
+				BFAFB3CA1C4A77F6002C1FCD /* DefaultsHelpers.swift */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -220,6 +325,8 @@
 				BF8DCD9D1C437DF5009570C7 /* DrilldownUITests */,
 				BF8DCDA71C437DF6009570C7 /* Drilldown WatchKit App */,
 				BF8DCDB61C437DF6009570C7 /* Drilldown WatchKit Extension */,
+				BF061EC51C4AE4AD0088AC49 /* DrilldownData */,
+				BF061ED31C4AE4AE0088AC49 /* DrilldownDataTests */,
 				BF8DCD7C1C437DF5009570C7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -232,6 +339,8 @@
 				BF8DCD9A1C437DF5009570C7 /* DrilldownUITests.xctest */,
 				BF8DCDA31C437DF6009570C7 /* Drilldown WatchKit App.app */,
 				BF8DCDB21C437DF6009570C7 /* Drilldown WatchKit Extension.appex */,
+				BF061EC41C4AE4AD0088AC49 /* DrilldownData.framework */,
+				BF061ECD1C4AE4AD0088AC49 /* DrilldownDataTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -239,6 +348,8 @@
 		BF8DCD7D1C437DF5009570C7 /* Drilldown */ = {
 			isa = PBXGroup;
 			children = (
+				BF45DB761C4AF04500FB3E55 /* Data */,
+				BFA621F51C4ACB4D00087CE8 /* Drilldown.entitlements */,
 				BF8DCDD81C43E16C009570C7 /* Views */,
 				BF8DCDD51C438953009570C7 /* Communication */,
 				BF8DCD7E1C437DF5009570C7 /* AppDelegate.swift */,
@@ -246,7 +357,6 @@
 				BF8DCD851C437DF5009570C7 /* Assets.xcassets */,
 				BF8DCD871C437DF5009570C7 /* LaunchScreen.storyboard */,
 				BF8DCD8A1C437DF5009570C7 /* Info.plist */,
-				BF5638D11C48F80000E18B05 /* Drilldown.xcdatamodeld */,
 			);
 			path = Drilldown;
 			sourceTree = "<group>";
@@ -272,6 +382,7 @@
 		BF8DCDA71C437DF6009570C7 /* Drilldown WatchKit App */ = {
 			isa = PBXGroup;
 			children = (
+				BFA621F61C4ACBF700087CE8 /* Drilldown WatchKit App.entitlements */,
 				BF8DCDA81C437DF6009570C7 /* Interface.storyboard */,
 				BF8DCDAB1C437DF6009570C7 /* Assets.xcassets */,
 				BF8DCDAD1C437DF6009570C7 /* Info.plist */,
@@ -282,6 +393,7 @@
 		BF8DCDB61C437DF6009570C7 /* Drilldown WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				BF45DB701C4AEDE300FB3E55 /* Data */,
 				BF56388F1C47FC4000E18B05 /* Notifications */,
 				BF56388E1C47FBDC00E18B05 /* App */,
 				BF56388D1C47FBD600E18B05 /* Glances */,
@@ -314,13 +426,63 @@
 			isa = PBXGroup;
 			children = (
 				BF8DCDD91C43E1A5009570C7 /* FeaturedTableView.swift */,
+				BFAFB3C51C4A6DC9002C1FCD /* PreferencesTableViewController.swift */,
+				BFAFB3C71C4A6F7D002C1FCD /* PreferencesTableViewCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		BF061EC11C4AE4AD0088AC49 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF061EC71C4AE4AD0088AC49 /* DrilldownData.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		BF061EC31C4AE4AD0088AC49 /* DrilldownData */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF061EDB1C4AE4AE0088AC49 /* Build configuration list for PBXNativeTarget "DrilldownData" */;
+			buildPhases = (
+				BF061EBF1C4AE4AD0088AC49 /* Sources */,
+				BF061EC01C4AE4AD0088AC49 /* Frameworks */,
+				BF061EC11C4AE4AD0088AC49 /* Headers */,
+				BF061EC21C4AE4AD0088AC49 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DrilldownData;
+			productName = DrilldownData;
+			productReference = BF061EC41C4AE4AD0088AC49 /* DrilldownData.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BF061ECC1C4AE4AD0088AC49 /* DrilldownDataTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF061EDE1C4AE4AE0088AC49 /* Build configuration list for PBXNativeTarget "DrilldownDataTests" */;
+			buildPhases = (
+				BF061EC91C4AE4AD0088AC49 /* Sources */,
+				BF061ECA1C4AE4AD0088AC49 /* Frameworks */,
+				BF061ECB1C4AE4AD0088AC49 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF061ED01C4AE4AD0088AC49 /* PBXTargetDependency */,
+				BF061ED21C4AE4AE0088AC49 /* PBXTargetDependency */,
+			);
+			name = DrilldownDataTests;
+			productName = DrilldownDataTests;
+			productReference = BF061ECD1C4AE4AD0088AC49 /* DrilldownDataTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		BF8DCD7A1C437DF5009570C7 /* Drilldown */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BF8DCDCC1C437DF6009570C7 /* Build configuration list for PBXNativeTarget "Drilldown" */;
@@ -329,10 +491,12 @@
 				BF8DCD781C437DF5009570C7 /* Frameworks */,
 				BF8DCD791C437DF5009570C7 /* Resources */,
 				BF8DCDCB1C437DF6009570C7 /* Embed Watch Content */,
+				BFA622161C4ACCCC00087CE8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				BF061EEA1C4AE89D0088AC49 /* PBXTargetDependency */,
 				BF8DCDA61C437DF6009570C7 /* PBXTargetDependency */,
 			);
 			name = Drilldown;
@@ -420,10 +584,21 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Pavel Hamřík";
 				TargetAttributes = {
+					BF061EC31C4AE4AD0088AC49 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = MZ45TX74QY;
+					};
+					BF061ECC1C4AE4AD0088AC49 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = BF8DCD7A1C437DF5009570C7;
+					};
 					BF8DCD7A1C437DF5009570C7 = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = MZ45TX74QY;
 						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
 							com.apple.BackgroundModes = {
 								enabled = 1;
 							};
@@ -440,6 +615,11 @@
 					BF8DCDA21C437DF6009570C7 = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = MZ45TX74QY;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					BF8DCDB11C437DF6009570C7 = {
 						CreatedOnToolsVersion = 7.2;
@@ -465,11 +645,27 @@
 				BF8DCD991C437DF5009570C7 /* DrilldownUITests */,
 				BF8DCDA21C437DF6009570C7 /* Drilldown WatchKit App */,
 				BF8DCDB11C437DF6009570C7 /* Drilldown WatchKit Extension */,
+				BF061EC31C4AE4AD0088AC49 /* DrilldownData */,
+				BF061ECC1C4AE4AD0088AC49 /* DrilldownDataTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		BF061EC21C4AE4AD0088AC49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF061ECB1C4AE4AD0088AC49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BF8DCD791C437DF5009570C7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -516,19 +712,37 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		BF061EBF1C4AE4AD0088AC49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF061EE21C4AE4D60088AC49 /* DrilldownData.swift in Sources */,
+				BF45DB6F1C4AED6800FB3E55 /* DrilldownData.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF061EC91C4AE4AD0088AC49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF061ED51C4AE4AE0088AC49 /* DrilldownDataTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BF8DCD771C437DF5009570C7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF5638D31C48F80000E18B05 /* Drilldown.xcdatamodeld in Sources */,
 				BF8DCDDA1C43E1A5009570C7 /* FeaturedTableView.swift in Sources */,
 				BF8DCD7F1C437DF5009570C7 /* AppDelegate.swift in Sources */,
 				BF8DCDD71C438990009570C7 /* Communication.swift in Sources */,
 				BFB036181C49520600181A51 /* HackerNews.swift in Sources */,
 				BF52C9D21C468184007704C9 /* Article.swift in Sources */,
-				BFB0361C1C49536B00181A51 /* CoreDataHelpers.swift in Sources */,
+				BFAFB3C81C4A6F7D002C1FCD /* PreferencesTableViewCell.swift in Sources */,
+				BF45DB741C4AEF6400FB3E55 /* ArticleExtension.swift in Sources */,
+				BFAFB3CB1C4A77F6002C1FCD /* DefaultsHelpers.swift in Sources */,
+				BFAFB3C61C4A6DC9002C1FCD /* PreferencesTableViewController.swift in Sources */,
 				BF52C9DB1C46B3E1007704C9 /* DateHelpers.swift in Sources */,
-				BFB0361A1C49531800181A51 /* JSONHelpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -552,13 +766,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF45DB751C4AEFE300FB3E55 /* Article.swift in Sources */,
+				BFAFB3CC1C4AB100002C1FCD /* HackerNews.swift in Sources */,
 				BF52C9DD1C46F210007704C9 /* ArticleRowController.swift in Sources */,
 				BF5638911C47FCC000E18B05 /* GlanceInterfaceController.swift in Sources */,
 				BF8DCDBE1C437DF6009570C7 /* NotificationController.swift in Sources */,
+				BF45DB721C4AEDFF00FB3E55 /* ArticleWKExtension.swift in Sources */,
 				BF52C9D71C469048007704C9 /* ArticleController.swift in Sources */,
 				BF8DCDBC1C437DF6009570C7 /* ExtensionDelegate.swift in Sources */,
 				BF8021581C4664E000E41B83 /* ArticlesController.swift in Sources */,
-				BF52C9D31C4681AA007704C9 /* Article.swift in Sources */,
+				BFAFB3D11C4AB121002C1FCD /* DefaultsHelpers.swift in Sources */,
 				BF52C9D91C46B365007704C9 /* DateHelpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -566,6 +783,21 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		BF061ED01C4AE4AD0088AC49 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF061EC31C4AE4AD0088AC49 /* DrilldownData */;
+			targetProxy = BF061ECF1C4AE4AD0088AC49 /* PBXContainerItemProxy */;
+		};
+		BF061ED21C4AE4AE0088AC49 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF8DCD7A1C437DF5009570C7 /* Drilldown */;
+			targetProxy = BF061ED11C4AE4AE0088AC49 /* PBXContainerItemProxy */;
+		};
+		BF061EEA1C4AE89D0088AC49 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF061EC31C4AE4AD0088AC49 /* DrilldownData */;
+			targetProxy = BF061EE91C4AE89D0088AC49 /* PBXContainerItemProxy */;
+		};
 		BF8DCD911C437DF5009570C7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = BF8DCD7A1C437DF5009570C7 /* Drilldown */;
@@ -616,6 +848,73 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		BF061EDC1C4AE4AE0088AC49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = DrilldownData/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ph.DrilldownData;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BF061EDD1C4AE4AE0088AC49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = DrilldownData/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ph.DrilldownData;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BF061EDF1C4AE4AE0088AC49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DrilldownDataTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ph.DrilldownDataTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Drilldown.app/Drilldown";
+			};
+			name = Debug;
+		};
+		BF061EE01C4AE4AE0088AC49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DrilldownDataTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ph.DrilldownDataTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Drilldown.app/Drilldown";
+			};
+			name = Release;
+		};
 		BF8DCDC21C437DF6009570C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -638,6 +937,10 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/**",
+					"$(SRCROOT)/DrilldownData",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -656,6 +959,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/**";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -683,6 +987,10 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/**",
+					"$(SRCROOT)/DrilldownData",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -694,6 +1002,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/**";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -737,6 +1046,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Drilldown WatchKit App/Drilldown WatchKit App.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
@@ -756,6 +1066,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Drilldown WatchKit App/Drilldown WatchKit App.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
@@ -775,8 +1086,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Drilldown/Drilldown.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/DrilldownData",
+					"$(SRCROOT)/**",
+				);
 				INFOPLIST_FILE = Drilldown/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ph.Drilldown;
@@ -789,8 +1106,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Drilldown/Drilldown.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/DrilldownData",
+					"$(SRCROOT)/**",
+				);
 				INFOPLIST_FILE = Drilldown/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ph.Drilldown;
@@ -850,6 +1173,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		BF061EDB1C4AE4AE0088AC49 /* Build configuration list for PBXNativeTarget "DrilldownData" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF061EDC1C4AE4AE0088AC49 /* Debug */,
+				BF061EDD1C4AE4AE0088AC49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF061EDE1C4AE4AE0088AC49 /* Build configuration list for PBXNativeTarget "DrilldownDataTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF061EDF1C4AE4AE0088AC49 /* Debug */,
+				BF061EE01C4AE4AE0088AC49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		BF8DCD761C437DF5009570C7 /* Build configuration list for PBXProject "Drilldown" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -907,14 +1248,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		BF5638D11C48F80000E18B05 /* Drilldown.xcdatamodeld */ = {
+		BF45DB6D1C4AED6800FB3E55 /* DrilldownData.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				BFB0361D1C497A1300181A51 /* Drilldown 2.xcdatamodel */,
-				BF5638D21C48F80000E18B05 /* Drilldown.xcdatamodel */,
+				BF45DB6E1C4AED6800FB3E55 /* DrilldownData.xcdatamodel */,
 			);
-			currentVersion = BFB0361D1C497A1300181A51 /* Drilldown 2.xcdatamodel */;
-			path = Drilldown.xcdatamodeld;
+			currentVersion = BF45DB6E1C4AED6800FB3E55 /* DrilldownData.xcdatamodel */;
+			path = DrilldownData.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

@@ -17,48 +17,25 @@ class Article {
     
     let date: String
     
-    private let status: String
+    let source: String
+    
+    let url: String
+    
+    let status: String
     var isRead: Bool {
         get {
             return status == "Read"
         }
     }
     
-    let source: String
     
-    
-    class func allArticles() -> [Article] {
-        
-        var articles = [Article]()
-        
-        if let path = NSBundle.mainBundle().pathForResource("Articles", ofType: "json"), let data = NSData(contentsOfFile: path) {
-            do {
-                let json = try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.AllowFragments) as! [Dictionary<String, String>]
-                for dict in json {
-                    let article = Article(dictionary: dict)
-                    articles.append(article)
-                }
-            } catch {
-                print(error)
-            }
-        }
-        
-        return articles
-        
-    }
-    
-    
-    private func getJSON(urlToRequest: String) -> NSData{
-        return NSData(contentsOfURL: NSURL(string: urlToRequest)!)!
-    }
-    
-    
-    init(title: String, text: String, date: String, status: String, source: String) {
+    init(title: String, text: String, date: String, status: String, source: String, url: String) {
         self.title = title
         self.text = text
         self.date = date
         self.status = status
         self.source = source
+        self.url = url
     }
     
     
@@ -68,7 +45,8 @@ class Article {
         let date = dictionary["date"]!
         let status = dictionary["status"]!
         let source = dictionary["source"]!
-        self.init(title: title, text: text, date: date, status: status, source: source)
+        let url = dictionary["url"]!
+        self.init(title: title, text: text, date: date, status: status, source: source, url: url)
     }
     
     

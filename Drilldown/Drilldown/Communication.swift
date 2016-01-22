@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import DrilldownData
 
 class Communication {
     
@@ -19,7 +20,7 @@ class Communication {
         // get the HackerNews articles in the standardized format, then store them in CoreData Article entity
         let hackerNewsArticles = HackerNews.getArticles()
         for article in hackerNewsArticles {
-            CoreDataHelpers.save("Article", values: article)
+            DrilldownData.save("Article", values: article)
         }
         
         // do the same for all supported sources

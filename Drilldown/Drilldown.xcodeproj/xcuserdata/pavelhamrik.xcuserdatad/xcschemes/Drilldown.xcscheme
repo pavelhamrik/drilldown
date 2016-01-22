@@ -48,6 +48,16 @@
                ReferencedContainer = "container:Drilldown.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "BFA622041C4ACCCC00087CE8"
+               BuildableName = "DrilldownDataTests.xctest"
+               BlueprintName = "DrilldownDataTests"
+               ReferencedContainer = "container:Drilldown.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

@@ -6,7 +6,6 @@
 //  Copyright © 2016 Pavel Hamřík. All rights reserved.
 //
 
-
 import Foundation
 
 class DateHelpers {
@@ -41,6 +40,28 @@ class DateHelpers {
         return output
     
     }
-
+    
+    static func dateToString(date: NSDate) -> String {
+    
+        let formatter = NSDateFormatter()
+        return formatter.stringFromDate(date)
+    
+    }
+    
+    
+    static func stringToDate(string: String) -> NSDate {
+        
+        let formatter = NSDateFormatter()
+        return formatter.dateFromString(string)!
+        
+    }
+    
+    
+    static func doubleToDate(double: Double) -> NSDate {
+        
+        return NSDate(timeIntervalSince1970: double)
+        
+    }
+    
 
 }

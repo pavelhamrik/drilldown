@@ -20,16 +20,32 @@ class DefaultsHelpers {
     }
     
     
+    static func saveAnyDefaults(key: String, value: AnyObject) {
+        
+        let defaults = NSUserDefaults.standardUserDefaults()
+        defaults.setObject(value, forKey: key)
+        defaults.synchronize()
+        
+    }
+    
+    
     static func loadDefaults(key: String) -> String {
         
         let defaults = NSUserDefaults.standardUserDefaults()
         let value = defaults.stringForKey(key)
-        
         if (value != nil) {
             return value!
         }
-        
         return ""
+        
+    }
+    
+    
+    static func loadAnyDefaults(key: String) -> AnyObject? {
+        
+        let defaults = NSUserDefaults.standardUserDefaults()
+        let value = defaults.objectForKey(key)
+        return value
         
     }
     
@@ -58,6 +74,16 @@ class DefaultsHelpers {
     }
     
     
+    static func removeDefaults(key: String) {
+        
+        let defaults = NSUserDefaults.standardUserDefaults()
+        defaults.removeObjectForKey(key)
+        defaults.synchronize()
+        
+    }
+    
+    
+    /*
     static func resetDefaults() {
         
         let defaultsData = NSUserDefaults.standardUserDefaults()
@@ -71,6 +97,7 @@ class DefaultsHelpers {
         }
         
     }
+    */
     
     
 }

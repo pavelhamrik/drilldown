@@ -11,16 +11,18 @@ import Foundation
 class DateHelpers {
     
     
+    // format a date String that's already a String
+    
     static func formatDate(date: String) -> String {
-        return formatDate(date, inputFormat: "yyyy-MM-dd'T'hh:mm:ssXXX", outputDateStyle: NSDateFormatterStyle.MediumStyle, outputTimeStyle: NSDateFormatterStyle.NoStyle)
+        return DateHelpers.formatDate(date, inputFormat: "yyyy-MM-dd'T'hh:mm:ssXXX", outputDateStyle: NSDateFormatterStyle.MediumStyle, outputTimeStyle: NSDateFormatterStyle.NoStyle)
     }
     
     static func formatDate(date: String, inputFormat: String) -> String {
-        return formatDate(date, inputFormat: inputFormat, outputDateStyle: NSDateFormatterStyle.MediumStyle, outputTimeStyle: NSDateFormatterStyle.NoStyle)
+        return DateHelpers.formatDate(date, inputFormat: inputFormat, outputDateStyle: NSDateFormatterStyle.MediumStyle, outputTimeStyle: NSDateFormatterStyle.NoStyle)
     }
 
     static func formatDate(date: String, inputFormat: String, outputDateStyle: NSDateFormatterStyle) -> String {
-        return formatDate(date, inputFormat: inputFormat, outputDateStyle: outputDateStyle, outputTimeStyle: NSDateFormatterStyle.NoStyle)
+        return DateHelpers.formatDate(date, inputFormat: inputFormat, outputDateStyle: outputDateStyle, outputTimeStyle: NSDateFormatterStyle.NoStyle)
     }
 
     static func formatDate(date: String, inputFormat: String, outputDateStyle: NSDateFormatterStyle, outputTimeStyle: NSDateFormatterStyle) -> String {
@@ -32,22 +34,39 @@ class DateHelpers {
         let nsDate = formatter.dateFromString(date)
         
         if nsDate != nil {
-            formatter.dateStyle = outputDateStyle
-            formatter.timeStyle = outputTimeStyle
-            output = formatter.stringFromDate(nsDate!)
+            output = DateHelpers.dateToString(nsDate!, dateStyle: outputDateStyle, timeStyle: outputTimeStyle)
         }
         
         return output
     
     }
     
+    
+    // format an NSDate
+    
     static func dateToString(date: NSDate) -> String {
+        return DateHelpers.dateToString(date, dateStyle: NSDateFormatterStyle.MediumStyle, timeStyle: NSDateFormatterStyle.NoStyle)
+    }
+    
+    static func dateToString(date: NSDate, dateStyle: NSDateFormatterStyle) -> String {
+        return DateHelpers.dateToString(date, dateStyle: dateStyle, timeStyle: NSDateFormatterStyle.NoStyle)
+    }
+    
+    static func dateToString(date: NSDate, dateStyle: NSDateFormatterStyle, timeStyle: NSDateFormatterStyle) -> String {
     
         let formatter = NSDateFormatter()
-        return formatter.stringFromDate(date)
+        var output = ""
+        
+        formatter.dateStyle = dateStyle
+        formatter.timeStyle = timeStyle
+        output = formatter.stringFromDate(date)
+        
+        return output
     
     }
     
+    
+    // convert a String to NSDate
     
     static func stringToDate(string: String) -> NSDate {
         
@@ -56,6 +75,8 @@ class DateHelpers {
         
     }
     
+    
+    // convert Double to NSDate
     
     static func doubleToDate(double: Double) -> NSDate {
         

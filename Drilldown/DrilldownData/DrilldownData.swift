@@ -37,8 +37,7 @@ public class DrilldownData: NSObject {
         
         do {
             try managedContext.save()
-        }
-        catch let error as NSError  {
+        } catch let error as NSError  {
             print("Could not save \(error), \(error.userInfo)")
         }
         
@@ -46,12 +45,18 @@ public class DrilldownData: NSObject {
     
     
     public class func load(entity: String) -> [NSManagedObject] {
+        return load(entity, limit: 0)
+    }
+    
+    public class func load(entity: String, limit: Int) -> [NSManagedObject] {
         
         var values = [NSManagedObject]()
         
         let managedContext = DrilldownData.sharedInstance.managedObjectContext
         
         let fetchRequest = NSFetchRequest(entityName: entity)
+        fetchRequest.fetchLimit = limit
+        fetchRequest.sortDescriptors = [NSSortDescriptor(key: "date", ascending: false)]
         do {
             let results = try managedContext.executeFetchRequest(fetchRequest)
             values = results as! [NSManagedObject]
@@ -60,6 +65,72 @@ public class DrilldownData: NSObject {
         }
         
         return values
+        
+    }
+    
+    
+    public class func objectCount(entity: String, objectIDName: String, objectID: String) -> Int {
+    
+        let managedContext = DrilldownData.sharedInstance.managedObjectContext
+        let fetchRequest = NSFetchRequest(entityName: entity)
+        fetchRequest.predicate = NSPredicate(format: objectIDName + " == %@", objectID)
+        
+        var error: NSError?
+        let count = managedContext.countForFetchRequest(fetchRequest, error: &error)
+        if let e = error {
+            print("Error returning results count: \(e). \(e.userInfo)")
+            return 0
+        }
+        return count
+        
+    }
+    
+    
+    public class func objectExists(entity: String, objectIDName: String, objectID: String) -> Bool {
+    
+        if self.objectCount(entity, objectIDName: objectIDName, objectID: objectID ) > 0 {
+            return true
+        }
+        return false
+        
+    }
+    
+    
+    public class func deleteObjects(entity: String) -> Bool {
+        
+        let managedContext = DrilldownData.sharedInstance.managedObjectContext
+        let fetchRequest = NSFetchRequest(entityName: entity)
+
+        return DrilldownData.deleteObjects(managedContext, fetchRequest: fetchRequest)
+        
+    }
+    
+    
+    public class func deleteObject(entity: String, objectIDName: String, objectID: String) -> Bool {
+        
+        let managedContext = DrilldownData.sharedInstance.managedObjectContext
+        let fetchRequest = NSFetchRequest(entityName: entity)
+        fetchRequest.predicate = NSPredicate(format: objectIDName + " == %@", objectID)
+        
+        return DrilldownData.deleteObjects(managedContext, fetchRequest: fetchRequest)
+        
+    }
+    
+    
+    private class func deleteObjects(managedContext: NSManagedObjectContext, fetchRequest: NSFetchRequest) -> Bool {
+    
+        do {
+            let fetchedEntities = try managedContext.executeFetchRequest(fetchRequest) as! [NSManagedObject]
+            for entity in fetchedEntities {
+                managedContext.deleteObject(entity)
+            }
+            try managedContext.save()
+            return true
+        } catch let error as NSError {
+            print("Could not delete \(error), \(error.userInfo)")
+        }
+        
+        return false
         
     }
     

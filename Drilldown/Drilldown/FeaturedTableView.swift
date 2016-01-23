@@ -19,12 +19,15 @@ class FeaturedTableView: UITableViewController {
     
     
     override func viewWillAppear(animated: Bool) {
+        
         super.viewWillAppear(animated)
-        articles = DrilldownData.load("Article")
+        articles = DrilldownData.load("Article", limit: 30)
+        
     }
     
 
     override func viewDidLoad() {
+        
         super.viewDidLoad()
 
         // Uncomment the following line to preserve selection between presentations
@@ -32,6 +35,14 @@ class FeaturedTableView: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         //self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+        
+        // Hide separators for empty rows
+        self.tableView.tableFooterView = UIView()
+        
+        // Pull to refresh handler
+        self.refreshControl?.addTarget(self, action: "handleRefresh:", forControlEvents: UIControlEvents.ValueChanged)
+
     }
     
 
@@ -40,39 +51,87 @@ class FeaturedTableView: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return Communication.sources.count
+    
+    func fancyReloadData() {
+    
+        featuredTable.reloadSections(NSIndexSet(index: 0), withRowAnimation: UITableViewRowAnimation.Automatic)
+    
+    }
+    
+    
+    func handleRefresh(refreshControl: UIRefreshControl) {
+        
+        reloadArticles(self)
+        refreshControl.endRefreshing()
+    
     }
     
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
         return articles.count
+        
     }
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("FeaturedCell", forIndexPath: indexPath)
+        
+        let cell = featuredTable.dequeueReusableCellWithIdentifier("FeaturedCell", forIndexPath: indexPath)
         let article = articles[indexPath.row]
         
+        //cell.setValue(article.valueForKey("url"), forUndefinedKey: "cellID")
         cell.textLabel?.text = article.valueForKey("title") as? String
-        cell.detailTextLabel?.text = article.valueForKey("source") as? String
+        cell.detailTextLabel?.text = (article.valueForKey("source") as? String)! + " \u{2022} " + DateHelpers.dateToString(article.valueForKey("date") as! NSDate, dateStyle: NSDateFormatterStyle.MediumStyle, timeStyle: NSDateFormatterStyle.ShortStyle)
 
         return cell
+        
     }
     
     
-    override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return Communication.sources[section]
+    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+        
+        return true
+        
+    }
+    
+    
+    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        
+        featuredTable.beginUpdates()
+        
+        if (editingStyle == UITableViewCellEditingStyle.Delete) {
+            let itemToDelete = articles[indexPath.row]
+            
+            if let url = itemToDelete.valueForKey("url") as? String {
+                if DrilldownData.deleteObject("Article", objectIDName: "url", objectID: url) {
+                    featuredTable.deleteRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.Automatic)
+                    articles.removeAtIndex(indexPath.row)
+                }
+            }
+            
+        }
+        
+        featuredTable.endUpdates()
+        
     }
     
     
     @IBAction func reloadArticles(sender: AnyObject) {
+        
         Communication.reloadArticles()
         articles = DrilldownData.load("Article")
-        featuredTable.reloadData()
+        self.fancyReloadData()
+        
     }
     
+    
+    @IBAction func clearArticles(sender: AnyObject) {
+        
+        DrilldownData.deleteObjects("Article")
+        articles = DrilldownData.load("Article")
+        self.fancyReloadData()
+        
+    }
 
     /*
     // Override to support conditional editing of the table view.

@@ -44,7 +44,6 @@
 		BFAFB3C61C4A6DC9002C1FCD /* PreferencesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAFB3C51C4A6DC9002C1FCD /* PreferencesTableViewController.swift */; };
 		BFAFB3C81C4A6F7D002C1FCD /* PreferencesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAFB3C71C4A6F7D002C1FCD /* PreferencesTableViewCell.swift */; };
 		BFAFB3CB1C4A77F6002C1FCD /* DefaultsHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAFB3CA1C4A77F6002C1FCD /* DefaultsHelpers.swift */; };
-		BFAFB3CC1C4AB100002C1FCD /* HackerNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB036171C49520600181A51 /* HackerNews.swift */; };
 		BFAFB3D11C4AB121002C1FCD /* DefaultsHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAFB3CA1C4A77F6002C1FCD /* DefaultsHelpers.swift */; };
 		BFB036181C49520600181A51 /* HackerNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB036171C49520600181A51 /* HackerNews.swift */; };
 /* End PBXBuildFile section */
@@ -767,7 +766,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF45DB751C4AEFE300FB3E55 /* Article.swift in Sources */,
-				BFAFB3CC1C4AB100002C1FCD /* HackerNews.swift in Sources */,
 				BF52C9DD1C46F210007704C9 /* ArticleRowController.swift in Sources */,
 				BF5638911C47FCC000E18B05 /* GlanceInterfaceController.swift in Sources */,
 				BF8DCDBE1C437DF6009570C7 /* NotificationController.swift in Sources */,

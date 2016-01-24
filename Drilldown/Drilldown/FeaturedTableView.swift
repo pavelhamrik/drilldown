@@ -21,7 +21,7 @@ class FeaturedTableView: UITableViewController {
     override func viewWillAppear(animated: Bool) {
         
         super.viewWillAppear(animated)
-        articles = DrilldownData.load("Article", limit: 30)
+        self.loadArticles()
         
     }
     
@@ -42,6 +42,9 @@ class FeaturedTableView: UITableViewController {
         
         // Pull to refresh handler
         self.refreshControl?.addTarget(self, action: "handleRefresh:", forControlEvents: UIControlEvents.ValueChanged)
+        
+        // Observe notification to clear the articles
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "clearArticlesNotification", name: "DrilldownClearArticles", object: nil)
 
     }
     
@@ -63,6 +66,13 @@ class FeaturedTableView: UITableViewController {
         
         reloadArticles(self)
         refreshControl.endRefreshing()
+    
+    }
+    
+    
+    func clearArticlesNotification() {
+        
+        self.clearArticles(self)
     
     }
     
@@ -103,7 +113,8 @@ class FeaturedTableView: UITableViewController {
             let itemToDelete = articles[indexPath.row]
             
             if let url = itemToDelete.valueForKey("url") as? String {
-                if DrilldownData.deleteObject("Article", objectIDName: "url", objectID: url) {
+                //if DrilldownData.deleteObject("Article", objectIDName: "url", objectID: url) {
+                if DrilldownData.updateObjects("Article", objectIDName: "url", objectID: url, updates: ["status": "deleted"]) {
                     featuredTable.deleteRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.Automatic)
                     articles.removeAtIndex(indexPath.row)
                 }
@@ -116,10 +127,17 @@ class FeaturedTableView: UITableViewController {
     }
     
     
+    func loadArticles() {
+    
+        articles = DrilldownData.load("Article", limit: 30, predicate: NSPredicate(format: "status != %@", "deleted"))
+    
+    }
+    
+    
     @IBAction func reloadArticles(sender: AnyObject) {
         
         Communication.reloadArticles()
-        articles = DrilldownData.load("Article")
+        self.loadArticles()
         self.fancyReloadData()
         
     }
@@ -128,7 +146,7 @@ class FeaturedTableView: UITableViewController {
     @IBAction func clearArticles(sender: AnyObject) {
         
         DrilldownData.deleteObjects("Article")
-        articles = DrilldownData.load("Article")
+        self.loadArticles()
         self.fancyReloadData()
         
     }

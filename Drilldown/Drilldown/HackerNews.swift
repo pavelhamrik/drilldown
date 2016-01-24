@@ -41,9 +41,7 @@ class HackerNews {
                                     article.updateValue("...", forKey: "text")
                                     article.updateValue("Unread", forKey: "status")
                                     articles.append(article)
-                                    print("Object \(url) dosn't exist.")
-                                } else {
-                                    print("Object \(url) already exists.")
+                                    print("Article saved.")
                                 }
                             }
                             

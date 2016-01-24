@@ -67,13 +67,7 @@
                         </connections>
                     </tableView>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Recents" id="705-JP-Sqv">
-                        <barButtonItem key="rightBarButtonItem" systemItem="trash" id="Rpi-K0-1t3">
-                            <connections>
-                                <action selector="clearArticles:" destination="NfA-lT-ReI" id="kyy-az-UEA"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Recents" id="705-JP-Sqv"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="zMc-Mh-7Sk">
                         <autoresizingMask key="autoresizingMask"/>
@@ -160,6 +154,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <view key="tableFooterView" contentMode="scaleToFill" id="LHk-hn-IUO">
+                            <rect key="frame" x="0.0" y="176" width="600" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Juy-ec-hzS">
+                                    <rect key="frame" x="15" y="0.0" width="570" height="44"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="44" id="Qv0-ba-LFQ"/>
+                                    </constraints>
+                                    <size key="titleShadowOffset" width="2.2250738585072014e-308" height="2.2250738585072014e-308"/>
+                                    <state key="normal" title="Clear Downloaded"/>
+                                    <connections>
+                                        <action selector="clearArticles" destination="uGX-sB-Iml" eventType="touchUpInside" id="SpK-gT-A1W"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="Juy-ec-hzS" firstAttribute="leading" secondItem="LHk-hn-IUO" secondAttribute="leading" constant="15" id="K8W-sg-XNf"/>
+                                <constraint firstItem="Juy-ec-hzS" firstAttribute="centerY" secondItem="LHk-hn-IUO" secondAttribute="centerY" id="M0K-xt-glr"/>
+                                <constraint firstAttribute="trailing" secondItem="Juy-ec-hzS" secondAttribute="trailing" constant="15" id="yBp-ts-2bP"/>
+                            </constraints>
+                        </view>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" restorationIdentifier="preferencesCell" selectionStyle="none" indentationWidth="10" reuseIdentifier="preferencesCell" id="jOS-Yt-l7N" customClass="PreferencesTableViewCell" customModule="Drilldown" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="114" width="600" height="44"/>
@@ -202,6 +219,7 @@
                     <navigationItem key="navigationItem" title="Preferences" id="slW-cB-lrV"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="clearArticlesButton" destination="Juy-ec-hzS" id="12M-3i-fbO"/>
                         <outlet property="preferencesTable" destination="afI-x1-A7Y" id="Bux-9P-vEb"/>
                     </connections>
                 </tableViewController>

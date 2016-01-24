@@ -22,11 +22,6 @@ class Article {
     let url: String
     
     let status: String
-    var isRead: Bool {
-        get {
-            return status == "Read"
-        }
-    }
     
     
     init(title: String, text: String, date: String, status: String, source: String, url: String) {

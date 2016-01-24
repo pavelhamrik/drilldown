@@ -14,7 +14,11 @@ extension Article {
     
     class func newestArticle() -> Article {
         
-        return allArticles().first!
+        if allArticles().first != nil {
+            return allArticles().first!
+        }
+        
+        return Article(title: "", text: "", date: "", status: "", source: "", url: "")
         
     }
 

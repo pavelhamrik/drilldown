@@ -11,10 +11,8 @@ import CoreData
 public class DrilldownData: NSObject {
     
     
-    //public override init() {}
-    
-    
     let sharedAppGroup:String = "group.ph.Drilldown"
+    
     
     public class var sharedInstance : DrilldownData {
         struct Static {
@@ -44,20 +42,19 @@ public class DrilldownData: NSObject {
     }
     
     
-    public class func load(entity: String) -> [NSManagedObject] {
-        return load(entity, limit: 0)
-    }
+    // Load data with the option to add a few simple parameters
     
-    public class func load(entity: String, limit: Int) -> [NSManagedObject] {
+    public class func load(entity: String, limit: Int = 0, predicate: NSPredicate = NSPredicate(format: "url != %@", "")) -> [NSManagedObject] {
         
         var values = [NSManagedObject]()
         
         let managedContext = DrilldownData.sharedInstance.managedObjectContext
-        
         let fetchRequest = NSFetchRequest(entityName: entity)
+        fetchRequest.predicate = predicate
         fetchRequest.fetchLimit = limit
         fetchRequest.sortDescriptors = [NSSortDescriptor(key: "date", ascending: false)]
         do {
+            // TODO: Simplify
             let results = try managedContext.executeFetchRequest(fetchRequest)
             values = results as! [NSManagedObject]
         } catch let error as NSError {
@@ -96,12 +93,28 @@ public class DrilldownData: NSObject {
     }
     
     
-    public class func deleteObjects(entity: String) -> Bool {
+    public class func updateObjects(entity: String, objectIDName: String, objectID: String, updates: [String: AnyObject]) -> Bool {
         
         let managedContext = DrilldownData.sharedInstance.managedObjectContext
         let fetchRequest = NSFetchRequest(entityName: entity)
+        fetchRequest.predicate = NSPredicate(format: objectIDName + " == %@", objectID)
+        
+        do {
+            let results = try managedContext.executeFetchRequest(fetchRequest) as! [NSManagedObject]
+            for result in results {
+                for (key, value) in updates {
+                    if result.valueForKey(key) != nil {
+                        result.setValue(value, forKey: key)
+                    }
+                }
+            }
+            try managedContext.save()
+            return true
+        } catch let error as NSError {
+            print("Could not fetch \(error), \(error.userInfo)")
+        }
 
-        return DrilldownData.deleteObjects(managedContext, fetchRequest: fetchRequest)
+        return false
         
     }
     
@@ -112,6 +125,16 @@ public class DrilldownData: NSObject {
         let fetchRequest = NSFetchRequest(entityName: entity)
         fetchRequest.predicate = NSPredicate(format: objectIDName + " == %@", objectID)
         
+        return DrilldownData.deleteObjects(managedContext, fetchRequest: fetchRequest)
+        
+    }
+    
+    
+    public class func deleteObjects(entity: String) -> Bool {
+        
+        let managedContext = DrilldownData.sharedInstance.managedObjectContext
+        let fetchRequest = NSFetchRequest(entityName: entity)
+
         return DrilldownData.deleteObjects(managedContext, fetchRequest: fetchRequest)
         
     }

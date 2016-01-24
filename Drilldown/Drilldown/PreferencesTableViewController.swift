@@ -10,21 +10,32 @@ import UIKit
 
 class PreferencesTableViewController: UITableViewController {
     
+    
     @IBOutlet weak var preferencesTable: UITableView!
     
     let preferences = [Communication.sources]
     
     let preferencesSections = ["Sources"]
     
+    @IBOutlet weak var clearArticlesButton: UIButton!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if clearArticlesButton != nil {
+            UIKitHelpers.fancifyButton(clearArticlesButton, attributes: ["borderColor": UIKitHelpers.buttonBorderColor, "backgroundColor": UIKitHelpers.buttonBackgroundColor, "tintColor": UIKitHelpers.buttonTintColor, "cornerRadius": 3.0, "borderWidth": 0.5])
+        }
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+    }
+    
+    @IBAction func clearArticles() {
+        NSNotificationCenter.defaultCenter().postNotificationName("DrilldownClearArticles", object: self)
     }
 
     override func didReceiveMemoryWarning() {
